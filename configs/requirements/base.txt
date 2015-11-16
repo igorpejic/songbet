@@ -32,3 +32,5 @@ simplejson==3.8.0
 six==1.9.0
 uritemplate==0.6
 drf-nested-routers==0.10.0
+django-spirit
+django-extensions
