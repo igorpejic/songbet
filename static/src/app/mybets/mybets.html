@@ -1,0 +1,24 @@
+<div ng-if="!vm.mybets[0]" id="Mybets view" class="col-md-12">
+  <h2>
+    You have no bets yet!
+  </h2>
+</div>
+
+<div ng-if="vm.mybets[0]" id="Mybets view" class="col-md-12">
+  <h2>
+    Good luck!
+  </h2>
+    <table class="table table-hover">
+      <tr>
+        <th class="col-md-4">Date</th>
+        <th class="col-md-6">Stake</th>
+        <th class="col-md-2">Status</th>
+      </tr>
+      <tr ng-repeat="mybet in vm.mybets">
+        <td><a ui-sref="mybetsDetail({id: mybet.id})">{{mybet.date_time | date:'dd-MM-yyyy HH:mm'}}</a></td>
+        <td>{{mybet.stake | number:2}}</td>
+        <td>{{mybet.has_won | betStatus}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div id="10bets_view" class="col-md-12" ng-controller="TenBetController">
+  <div class="col-md-8">
+    <table class="table">
+      <tr>
+        <th>Tip</th>
+        <th>1</th>
+        <th>X</th>
+        <th>2</th>
+      </tr>
+      <tr ng-repeat="song in data">
+        <td ng-hide="hidden[song.position]">{{song.position}}. {{song.song.name}} - {{song.song.artist_name}}</td>
+        <!-- 1.0 placeholder for now -->
+        <td ng-hide="hidden[song.position]"><button class="btn btn-primary btn-xs" ng-class="myClass1" ng-click="addBet(song, '1')">1.0</button></td>
+        <td ng-hide="hidden[song.position]"><button class="btn btn-primary btn-xs" ng-class="myClass2" ng-click="addBet(song, 'X')">1.0</button></td>
+        <td ng-hide="hidden[song.position]"><button class="btn btn-primary btn-xs" ng-class="myClass" ng-click="addBet(song, '2')">1.0{{index}}</button></td>
+    </tr>
+  </table>
+</div>
+<div class="col-md-4">
+  <h3>{{possible_bets.length}}/10 bets</h3>
+  <div ng-if="possible_bets[0]">
+    <table>
+      <tr ng-repeat="bet in possible_bets">
+        <td class="col-md-4">{{bet.song.position}}. {{bet.song.song.name}} - {{bet.song.song.artist_name}} {{bet.choice}}
+        </td>
+        <td class="col-md-1"><a class="remove close" ng-click="removeBet(bet, $index)">x</a></td>
+      </tr>
+    </table>
+    <button class="btn btn-primary btn-sm" ng-click="submit_bet()">Bet</button>
+  </div>
+</div>

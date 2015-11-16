@@ -1,0 +1,20 @@
+<div class="col-md-12">
+  <div class="jumbotron col-md-12" style="background-color: #fff;">
+    <div class="container col-md-6 col-md-offset-3">
+      <h1>TOP BETTERS</h1>
+      <h3 class="text-center">Your name could be here!</h4>
+    </div>
+  </div>
+  <table class="table table-hover">
+    <tr>
+      <th class="text-center">Position</th>
+      <th class="text-center">User</th>
+      <th class="text-center">Funds</th>
+    </tr>
+    <tr ng-repeat="user in vm.users.users | orderBy:['-points', 'name']">
+      <td class="text-center">{{$index + 1}}.</td>
+      <td class="text-center">{{user.name}}</td>
+      <td class="text-center"><span class="badge">{{user.points}}</span></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,58 @@
+<div id="10bets_view" class="col-md-12">
+  <h3>Predict next week positions. Choose wisely.</h3>
+  <div class="col-md-8">
+    <table class="table table-hover">
+      <tr>
+        <th>Pos.</th>
+        <th class="text-center">Change</th>
+        <th class="text-left">Song</th>
+        <th class="text-center" ng-bind-html="'1' | betChoice"></th>
+        <th class="text-center" ng-bind-html="'X' | betChoice"></th>
+        <th class="text-center" ng-bind-html="'2' | betChoice"></th>
+      </tr>
+      <tr ng-repeat="song in vm.lastWeekSongs">
+        <td id="song-position">{{song.position}}.</td>
+        <td class="text-center" id="song-change" ng-bind-html="song.change | betChoice"></td>
+        <td>
+          <a href="{{song.song.youtube_link | youtubeLink:'video' }}" target="_blank">
+            <img src="{{song.song.youtube_link | youtubeLink:'thumbnail'}}" height="42" width="42" alt="Youtube video">&nbsp{{song.song.name}} - {{song.song.artist_name}}</a></td>
+        <!-- 1.0 placeholder for now -->
+        <td ng-hide="song.one"><button class="btn btn-primary btn-xs" ng-click="vm.addBet(song, '1');" ng-disabled="song.x || song.two">{{song.odd_1 || 1.0 | number:2}}</button></td>
+        <td ng-show="song.one"><button class="btn btn-primary btn-xs active" ng-click="vm.addBet(song, '1')">{{song.odd_1 || 1.0 | number:2}}</button></td>
+        <td ng-hide="song.x"><button class="btn btn-primary btn-xs" ng-click="vm.addBet(song, 'X');" ng-disabled="song.one || song.two">{{song.odd_x || 1.0 | number:2}}</button></td>
+        <td ng-show="song.x"><button class="btn btn-primary btn-xs active" ng-click="vm.addBet(song, 'X')">{{song.odd_x || 1.0 | number:2}}</button></td>
+        <td ng-hide="song.two"><button class="btn btn-primary btn-xs" ng-click="vm.addBet(song, '2');" ng-disabled="song.one || song.x">{{song.odd_2 || 1.0 | number:2}}</button></td>
+        <td ng-show="song.two"><button class="btn btn-primary btn-xs active" ng-click="vm.addBet(song, '2')">{{song.odd_2 || 1.0 | number:2}}</button></td>
+      </tr>
+    </table>
+  </div>
+  <div ng-if="vm.bets[0]" class="col-md-4">
+    <h3> Total: {{vm.bets.length}}</h3>
+    <div>
+      <table class="table table-hover white-border">
+        <tr ng-repeat="bet in vm.bets">
+          <td class="col-md-9">{{bet.song.position}}. {{bet.song.song.name}} - {{bet.song.song.artist_name}}</td>
+          <td class="col-md-1">{{bet.odd}}</td>
+          <td class="col-md-1" ng-bind-html="bet.choice | betChoice"></td>
+          <td class="col-md-1"><a class="remove close" ng-click="vm.removeBet(bet, $index)">x</a></td>
+        </tr>
+      </table>
+      <div class="row">
+        <div class="col-md-8">Total odds</div>
+        <div class="col-md-1">{{vm.totalOdds()}}</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-8">Total stake</div>
+        <div><input class="col-md-4 text-left stake-input" type="number" min="0" ng-model="vm.stake" ng-change="vm.calculateWin()"></input></div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">Possible winnings</div>
+        <div class="col-md-1">{{vm.win}}</div>
+      </div>
+      <br>
+      <button class="btn btn-primary btn-table" ng-click="vm.submitBet()">Bet</button>
+      <br/> 
+    </div>
+  </div>
+</div>

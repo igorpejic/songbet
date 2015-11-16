@@ -1,0 +1,3753 @@
+[
+{
+    "fields": {
+        "name": "OMI"
+    },
+    "model": "bet.artist",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "The Weeknd"
+    },
+    "model": "bet.artist",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "Silento"
+    },
+    "model": "bet.artist",
+    "pk": 3
+},
+{
+    "fields": {
+        "name": "Taylor Swift"
+    },
+    "model": "bet.artist",
+    "pk": 4
+},
+{
+    "fields": {
+        "name": "Wiz Khalifa"
+    },
+    "model": "bet.artist",
+    "pk": 5
+},
+{
+    "fields": {
+        "name": "Major Lazer"
+    },
+    "model": "bet.artist",
+    "pk": 6
+},
+{
+    "fields": {
+        "name": "Fetty Wap"
+    },
+    "model": "bet.artist",
+    "pk": 7
+},
+{
+    "fields": {
+        "name": "Rachel Platten"
+    },
+    "model": "bet.artist",
+    "pk": 8
+},
+{
+    "fields": {
+        "name": "WALK THE MOON"
+    },
+    "model": "bet.artist",
+    "pk": 9
+},
+{
+    "fields": {
+        "name": "Skrillex"
+    },
+    "model": "bet.artist",
+    "pk": 10
+},
+{
+    "fields": {
+        "name": "Selena Gomez"
+    },
+    "model": "bet.artist",
+    "pk": 11
+},
+{
+    "fields": {
+        "name": "Andy Grammer"
+    },
+    "model": "bet.artist",
+    "pk": 12
+},
+{
+    "fields": {
+        "name": "Fifth Harmony"
+    },
+    "model": "bet.artist",
+    "pk": 13
+},
+{
+    "fields": {
+        "name": "Mark Ronson"
+    },
+    "model": "bet.artist",
+    "pk": 14
+},
+{
+    "fields": {
+        "name": "David Guetta"
+    },
+    "model": "bet.artist",
+    "pk": 15
+},
+{
+    "fields": {
+        "name": "Demi Lovato"
+    },
+    "model": "bet.artist",
+    "pk": 16
+},
+{
+    "fields": {
+        "name": "Ed Sheeran"
+    },
+    "model": "bet.artist",
+    "pk": 17
+},
+{
+    "fields": {
+        "name": "Meek Mill"
+    },
+    "model": "bet.artist",
+    "pk": 18
+},
+{
+    "fields": {
+        "name": "Omarion"
+    },
+    "model": "bet.artist",
+    "pk": 19
+},
+{
+    "fields": {
+        "name": "Jason Derulo"
+    },
+    "model": "bet.artist",
+    "pk": 20
+},
+{
+    "fields": {
+        "name": "Jidenna"
+    },
+    "model": "bet.artist",
+    "pk": 21
+},
+{
+    "fields": {
+        "name": "Maroon 5"
+    },
+    "model": "bet.artist",
+    "pk": 22
+},
+{
+    "fields": {
+        "name": "Fall Out Boy"
+    },
+    "model": "bet.artist",
+    "pk": 23
+},
+{
+    "fields": {
+        "name": "Rich Homie Quan"
+    },
+    "model": "bet.artist",
+    "pk": 24
+},
+{
+    "fields": {
+        "name": "Luke Bryan"
+    },
+    "model": "bet.artist",
+    "pk": 25
+},
+{
+    "fields": {
+        "name": "Rihanna"
+    },
+    "model": "bet.artist",
+    "pk": 26
+},
+{
+    "fields": {
+        "name": "Sam Hunt"
+    },
+    "model": "bet.artist",
+    "pk": 27
+},
+{
+    "fields": {
+        "name": "Ellie Goulding"
+    },
+    "model": "bet.artist",
+    "pk": 28
+},
+{
+    "fields": {
+        "name": "DJ Snake"
+    },
+    "model": "bet.artist",
+    "pk": 29
+},
+{
+    "fields": {
+        "name": "Tove Lo"
+    },
+    "model": "bet.artist",
+    "pk": 30
+},
+{
+    "fields": {
+        "name": "Charlie Puth"
+    },
+    "model": "bet.artist",
+    "pk": 31
+},
+{
+    "fields": {
+        "name": "T-Wayne"
+    },
+    "model": "bet.artist",
+    "pk": 32
+},
+{
+    "fields": {
+        "name": "Trey Songz"
+    },
+    "model": "bet.artist",
+    "pk": 33
+},
+{
+    "fields": {
+        "name": "Shawn Mendes"
+    },
+    "model": "bet.artist",
+    "pk": 34
+},
+{
+    "fields": {
+        "name": "Little Big Town"
+    },
+    "model": "bet.artist",
+    "pk": 35
+},
+{
+    "fields": {
+        "name": "Thomas Rhett"
+    },
+    "model": "bet.artist",
+    "pk": 36
+},
+{
+    "fields": {
+        "name": "Sia"
+    },
+    "model": "bet.artist",
+    "pk": 37
+},
+{
+    "fields": {
+        "name": "Kid Ink"
+    },
+    "model": "bet.artist",
+    "pk": 38
+},
+{
+    "fields": {
+        "name": "Flo Rida"
+    },
+    "model": "bet.artist",
+    "pk": 39
+},
+{
+    "fields": {
+        "name": "X Ambassadors"
+    },
+    "model": "bet.artist",
+    "pk": 40
+},
+{
+    "fields": {
+        "name": "Chris Janson"
+    },
+    "model": "bet.artist",
+    "pk": 41
+},
+{
+    "fields": {
+        "name": "Zac Brown Band"
+    },
+    "model": "bet.artist",
+    "pk": 42
+},
+{
+    "fields": {
+        "name": "Brantley Gilbert"
+    },
+    "model": "bet.artist",
+    "pk": 43
+},
+{
+    "fields": {
+        "name": "Eric Church"
+    },
+    "model": "bet.artist",
+    "pk": 44
+},
+{
+    "fields": {
+        "name": "Rae Sremmurd"
+    },
+    "model": "bet.artist",
+    "pk": 45
+},
+{
+    "fields": {
+        "name": "5 Seconds Of Summer"
+    },
+    "model": "bet.artist",
+    "pk": 46
+},
+{
+    "fields": {
+        "name": "Michael Ray"
+    },
+    "model": "bet.artist",
+    "pk": 47
+},
+{
+    "fields": {
+        "name": "Keith Urban"
+    },
+    "model": "bet.artist",
+    "pk": 48
+},
+{
+    "fields": {
+        "name": "Pitbull"
+    },
+    "model": "bet.artist",
+    "pk": 49
+},
+{
+    "fields": {
+        "name": "Jeremih"
+    },
+    "model": "bet.artist",
+    "pk": 50
+},
+{
+    "fields": {
+        "name": "Jason Aldean"
+    },
+    "model": "bet.artist",
+    "pk": 51
+},
+{
+    "fields": {
+        "name": "R. City"
+    },
+    "model": "bet.artist",
+    "pk": 52
+},
+{
+    "fields": {
+        "name": "Frankie Ballard"
+    },
+    "model": "bet.artist",
+    "pk": 53
+},
+{
+    "fields": {
+        "name": "Nicki Minaj"
+    },
+    "model": "bet.artist",
+    "pk": 54
+},
+{
+    "fields": {
+        "name": "Janet"
+    },
+    "model": "bet.artist",
+    "pk": 55
+},
+{
+    "fields": {
+        "name": "Dustin Lynch"
+    },
+    "model": "bet.artist",
+    "pk": 56
+},
+{
+    "fields": {
+        "name": "Blake Shelton"
+    },
+    "model": "bet.artist",
+    "pk": 57
+},
+{
+    "fields": {
+        "name": "Brett Eldredge"
+    },
+    "model": "bet.artist",
+    "pk": 58
+},
+{
+    "fields": {
+        "name": "Adam Lambert"
+    },
+    "model": "bet.artist",
+    "pk": 59
+},
+{
+    "fields": {
+        "name": "Meghan Trainor"
+    },
+    "model": "bet.artist",
+    "pk": 60
+},
+{
+    "fields": {
+        "name": "Canaan Smith"
+    },
+    "model": "bet.artist",
+    "pk": 61
+},
+{
+    "fields": {
+        "name": "J. Cole"
+    },
+    "model": "bet.artist",
+    "pk": 62
+},
+{
+    "fields": {
+        "name": "Future"
+    },
+    "model": "bet.artist",
+    "pk": 63
+},
+{
+    "fields": {
+        "name": "Tori Kelly"
+    },
+    "model": "bet.artist",
+    "pk": 64
+},
+{
+    "fields": {
+        "name": "Jake Owen"
+    },
+    "model": "bet.artist",
+    "pk": 65
+},
+{
+    "fields": {
+        "name": "Pia Mia"
+    },
+    "model": "bet.artist",
+    "pk": 66
+},
+{
+    "fields": {
+        "name": "Nicky Jam"
+    },
+    "model": "bet.artist",
+    "pk": 67
+},
+{
+    "fields": {
+        "name": "Elle King"
+    },
+    "model": "bet.artist",
+    "pk": 68
+},
+{
+    "fields": {
+        "name": "Bea Miller"
+    },
+    "model": "bet.artist",
+    "pk": 69
+},
+{
+    "fields": {
+        "name": "Cam"
+    },
+    "model": "bet.artist",
+    "pk": 70
+},
+{
+    "fields": {
+        "name": "Maddie"
+    },
+    "model": "bet.artist",
+    "pk": 71
+},
+{
+    "fields": {
+        "name": "Calvin Harris"
+    },
+    "model": "bet.artist",
+    "pk": 72
+},
+{
+    "fields": {
+        "name": "Sage The Gemini"
+    },
+    "model": "bet.artist",
+    "pk": 73
+},
+{
+    "fields": {
+        "name": "Zedd"
+    },
+    "model": "bet.artist",
+    "pk": 74
+},
+{
+    "fields": {
+        "name": "DJ Khaled"
+    },
+    "model": "bet.artist",
+    "pk": 75
+},
+{
+    "fields": {
+        "name": "Brad Paisley"
+    },
+    "model": "bet.artist",
+    "pk": 76
+},
+{
+    "fields": {
+        "name": "Kelsea Ballerini"
+    },
+    "model": "bet.artist",
+    "pk": 77
+},
+{
+    "fields": {
+        "name": "Wale"
+    },
+    "model": "bet.artist",
+    "pk": 78
+},
+{
+    "fields": {
+        "name": "Old Dominion"
+    },
+    "model": "bet.artist",
+    "pk": 79
+},
+{
+    "fields": {
+        "name": "Kenny Chesney"
+    },
+    "model": "bet.artist",
+    "pk": 80
+},
+{
+    "fields": {
+        "name": "Echosmith"
+    },
+    "model": "bet.artist",
+    "pk": 81
+},
+{
+    "fields": {
+        "name": "Chris Young"
+    },
+    "model": "bet.artist",
+    "pk": 82
+},
+{
+    "fields": {
+        "name": "Kendrick Lamar"
+    },
+    "model": "bet.artist",
+    "pk": 83
+},
+{
+    "fields": {
+        "name": "Florida Georgia Line"
+    },
+    "model": "bet.artist",
+    "pk": 84
+},
+{
+    "fields": {
+        "name": "Eminem"
+    },
+    "model": "bet.artist",
+    "pk": 85
+},
+{
+    "fields": {
+        "name": "Janelle Monae"
+    },
+    "model": "bet.artist",
+    "pk": 86
+},
+{
+    "fields": {
+        "name": "Prince Royce"
+    },
+    "model": "bet.artist",
+    "pk": 87
+},
+{
+    "fields": {
+        "name": "Sam Smith"
+    },
+    "model": "bet.artist",
+    "pk": 88
+},
+{
+    "fields": {
+        "name": "Big Sean"
+    },
+    "model": "bet.artist",
+    "pk": 89
+},
+{
+    "fields": {
+        "name": "Easton Corbin"
+    },
+    "model": "bet.artist",
+    "pk": 90
+},
+{
+    "fields": {
+        "name": "twenty one pilots"
+    },
+    "model": "bet.artist",
+    "pk": 91
+},
+{
+    "fields": {
+        "name": "Ciara"
+    },
+    "model": "bet.artist",
+    "pk": 92
+},
+{
+    "fields": {
+        "name": "Natalie La Rose"
+    },
+    "model": "bet.artist",
+    "pk": 93
+},
+{
+    "fields": {
+        "name": "Billy Currington"
+    },
+    "model": "bet.artist",
+    "pk": 94
+},
+{
+    "fields": {
+        "name": "Carrie Underwood"
+    },
+    "model": "bet.artist",
+    "pk": 95
+},
+{
+    "fields": {
+        "name": "Carly Rae Jepsen"
+    },
+    "model": "bet.artist",
+    "pk": 96
+},
+{
+    "fields": {
+        "name": "Tech N9Ne"
+    },
+    "model": "bet.artist",
+    "pk": 97
+},
+{
+    "fields": {
+        "name": "Steven Tyler"
+    },
+    "model": "bet.artist",
+    "pk": 98
+},
+{
+    "fields": {
+        "name": "Tim McGraw"
+    },
+    "model": "bet.artist",
+    "pk": 99
+},
+{
+    "fields": {
+        "name": "A Thousand Horses"
+    },
+    "model": "bet.artist",
+    "pk": 100
+},
+{
+    "fields": {
+        "name": "NEEDTOBREATHE"
+    },
+    "model": "bet.artist",
+    "pk": 101
+},
+{
+    "fields": {
+        "name": "George Ezra"
+    },
+    "model": "bet.artist",
+    "pk": 102
+},
+{
+    "fields": {
+        "name": "Miguel"
+    },
+    "model": "bet.artist",
+    "pk": 103
+},
+{
+    "fields": {
+        "name": "Drake"
+    },
+    "model": "bet.artist",
+    "pk": 104
+},
+{
+    "fields": {
+        "name": "Jessie J"
+    },
+    "model": "bet.artist",
+    "pk": 105
+},
+{
+    "fields": {
+        "name": "Ariana Grande"
+    },
+    "model": "bet.artist",
+    "pk": 106
+},
+{
+    "fields": {
+        "name": "Shaggy"
+    },
+    "model": "bet.artist",
+    "pk": 107
+},
+{
+    "fields": {
+        "name": "Madonna"
+    },
+    "model": "bet.artist",
+    "pk": 108
+},
+{
+    "fields": {
+        "name": "Britney Spears"
+    },
+    "model": "bet.artist",
+    "pk": 109
+},
+{
+    "fields": {
+        "name": "Young Thug"
+    },
+    "model": "bet.artist",
+    "pk": 110
+},
+{
+    "fields": {
+        "name": "Hilary Duff"
+    },
+    "model": "bet.artist",
+    "pk": 111
+},
+{
+    "fields": {
+        "name": "Mumford"
+    },
+    "model": "bet.artist",
+    "pk": 112
+},
+{
+    "fields": {
+        "name": "Kevin Gates"
+    },
+    "model": "bet.artist",
+    "pk": 113
+},
+{
+    "fields": {
+        "name": "Chedda Da Connect"
+    },
+    "model": "bet.artist",
+    "pk": 114
+},
+{
+    "fields": {
+        "name": "Bandit Gang Marco"
+    },
+    "model": "bet.artist",
+    "pk": 115
+},
+{
+    "fields": {
+        "name": "Nick Jonas"
+    },
+    "model": "bet.artist",
+    "pk": 116
+},
+{
+    "fields": {
+        "name": "Travi$ Scott"
+    },
+    "model": "bet.artist",
+    "pk": 117
+},
+{
+    "fields": {
+        "name": "Kanye West"
+    },
+    "model": "bet.artist",
+    "pk": 118
+},
+{
+    "fields": {
+        "name": "A$AP Rocky"
+    },
+    "model": "bet.artist",
+    "pk": 119
+},
+{
+    "fields": {
+        "name": "How I Became The Bomb"
+    },
+    "model": "bet.artist",
+    "pk": 120
+},
+{
+    "fields": {
+        "name": "Jamie Foxx"
+    },
+    "model": "bet.artist",
+    "pk": 121
+},
+{
+    "fields": {
+        "name": "Dillon Francis"
+    },
+    "model": "bet.artist",
+    "pk": 122
+},
+{
+    "fields": {
+        "name": "Kelly Clarkson"
+    },
+    "model": "bet.artist",
+    "pk": 123
+},
+{
+    "fields": {
+        "name": "Sawyer Fredericks"
+    },
+    "model": "bet.artist",
+    "pk": 124
+},
+{
+    "fields": {
+        "name": "Hozier"
+    },
+    "model": "bet.artist",
+    "pk": 125
+},
+{
+    "fields": {
+        "name": "Chris Brown"
+    },
+    "model": "bet.artist",
+    "pk": 126
+},
+{
+    "fields": {
+        "name": "Meghan Linsey"
+    },
+    "model": "bet.artist",
+    "pk": 127
+},
+{
+    "fields": {
+        "name": "Eric Paslay"
+    },
+    "model": "bet.artist",
+    "pk": 128
+},
+{
+    "fields": {
+        "name": "One Direction"
+    },
+    "model": "bet.artist",
+    "pk": 129
+},
+{
+    "fields": {
+        "name": "Dove Cameron, Cameron Boyce, Booboo Stewart"
+    },
+    "model": "bet.artist",
+    "pk": 130
+},
+{
+    "fields": {
+        "name": "Disclosure"
+    },
+    "model": "bet.artist",
+    "pk": 131
+},
+{
+    "fields": {
+        "name": "The Game"
+    },
+    "model": "bet.artist",
+    "pk": 132
+},
+{
+    "fields": {
+        "name": "K Camp"
+    },
+    "model": "bet.artist",
+    "pk": 133
+},
+{
+    "fields": {
+        "name": "Cole Swindell"
+    },
+    "model": "bet.artist",
+    "pk": 134
+},
+{
+    "fields": {
+        "name": "Alessia Cara"
+    },
+    "model": "bet.artist",
+    "pk": 135
+},
+{
+    "fields": {
+        "name": "Dove Cameron"
+    },
+    "model": "bet.artist",
+    "pk": 136
+},
+{
+    "fields": {
+        "name": "Lana Del Rey"
+    },
+    "model": "bet.artist",
+    "pk": 137
+},
+{
+    "fields": {
+        "name": "Hailee Steinfeld"
+    },
+    "model": "bet.artist",
+    "pk": 138
+},
+{
+    "fields": {
+        "name": "Dan + Shay"
+    },
+    "model": "bet.artist",
+    "pk": 139
+},
+{
+    "fields": {
+        "name": "Chase Rice"
+    },
+    "model": "bet.artist",
+    "pk": 140
+},
+{
+    "fields": {
+        "name": "Little Mix"
+    },
+    "model": "bet.artist",
+    "pk": 141
+},
+{
+    "fields": {
+        "name": "Mac Miller"
+    },
+    "model": "bet.artist",
+    "pk": 142
+},
+{
+    "fields": {
+        "name": "@iHeartMemphis"
+    },
+    "model": "bet.artist",
+    "pk": 143
+},
+{
+    "fields": {
+        "name": "N.W.A"
+    },
+    "model": "bet.artist",
+    "pk": 144
+},
+{
+    "fields": {
+        "name": "Eazy-E"
+    },
+    "model": "bet.artist",
+    "pk": 145
+},
+{
+    "fields": {
+        "name": "Macklemore"
+    },
+    "model": "bet.artist",
+    "pk": 146
+},
+{
+    "fields": {
+        "name": "Andrew McMahon In The Wilderness"
+    },
+    "model": "bet.artist",
+    "pk": 147
+},
+{
+    "fields": {
+        "name": "Kip Moore"
+    },
+    "model": "bet.artist",
+    "pk": 148
+},
+{
+    "fields": {
+        "name": "Nelly"
+    },
+    "model": "bet.artist",
+    "pk": 149
+},
+{
+    "fields": {
+        "name": "Justin Bieber"
+    },
+    "model": "bet.artist",
+    "pk": 150
+},
+{
+    "fields": {
+        "name": "Post Malone"
+    },
+    "model": "bet.artist",
+    "pk": 151
+},
+{
+    "fields": {
+        "name": "Halsey"
+    },
+    "model": "bet.artist",
+    "pk": 152
+},
+{
+    "fields": {
+        "name": "J Balvin"
+    },
+    "model": "bet.artist",
+    "pk": 153
+},
+{
+    "fields": {
+        "name": "Imagine Dragons"
+    },
+    "model": "bet.artist",
+    "pk": 154
+},
+{
+    "fields": {
+        "name": "iHeartMemphis"
+    },
+    "model": "bet.artist",
+    "pk": 155
+},
+{
+    "fields": {
+        "name": "Lil Dicky"
+    },
+    "model": "bet.artist",
+    "pk": 156
+},
+{
+    "fields": {
+        "name": "Naughty Boy"
+    },
+    "model": "bet.artist",
+    "pk": 157
+},
+{
+    "fields": {
+        "name": "Lil Wayne"
+    },
+    "model": "bet.artist",
+    "pk": 158
+},
+{
+    "fields": {
+        "name": "Ty Dolla $ign"
+    },
+    "model": "bet.artist",
+    "pk": 159
+},
+{
+    "fields": {
+        "name": "A Great Big World"
+    },
+    "model": "bet.artist",
+    "pk": 160
+},
+{
+    "fields": {
+        "name": "Jess Glynne"
+    },
+    "model": "bet.artist",
+    "pk": 161
+},
+{
+    "fields": {
+        "name": "Kygo"
+    },
+    "model": "bet.artist",
+    "pk": 162
+},
+{
+    "fields": {
+        "name": "Daya"
+    },
+    "model": "bet.artist",
+    "pk": 163
+},
+{
+    "fields": {
+        "youtube_link": "jGflUbPQfW8",
+        "name": "Cheerleader",
+        "artist_name": "OMI",
+        "artist": 1
+    },
+    "model": "bet.song",
+    "pk": 1
+},
+{
+    "fields": {
+        "youtube_link": "KEI4qSrkPAs",
+        "name": "Can't Feel My Face",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 2
+},
+{
+    "fields": {
+        "youtube_link": "vjW8wmF5VWc",
+        "name": "Watch Me",
+        "artist_name": "Silento",
+        "artist": 3
+    },
+    "model": "bet.song",
+    "pk": 3
+},
+{
+    "fields": {
+        "youtube_link": "QcIy9NiNbmo",
+        "name": "Bad Blood",
+        "artist_name": "Taylor Swift Featuring Kendrick Lamar",
+        "artist": 4
+    },
+    "model": "bet.song",
+    "pk": 4
+},
+{
+    "fields": {
+        "youtube_link": "RgKAFK5djSk",
+        "name": "See You Again",
+        "artist_name": "Wiz Khalifa Featuring Charlie Puth",
+        "artist": 5
+    },
+    "model": "bet.song",
+    "pk": 5
+},
+{
+    "fields": {
+        "youtube_link": "YqeW9_5kURI",
+        "name": "Lean On",
+        "artist_name": "Major Lazer & DJ Snake Featuring M0",
+        "artist": 6
+    },
+    "model": "bet.song",
+    "pk": 6
+},
+{
+    "fields": {
+        "youtube_link": "i_kF4zLNKio",
+        "name": "Trap Queen",
+        "artist_name": "Fetty Wap",
+        "artist": 7
+    },
+    "model": "bet.song",
+    "pk": 7
+},
+{
+    "fields": {
+        "youtube_link": "Cvu0Q4Cl7pU",
+        "name": "My Way",
+        "artist_name": "Fetty Wap Featuring Monty",
+        "artist": 7
+    },
+    "model": "bet.song",
+    "pk": 8
+},
+{
+    "fields": {
+        "youtube_link": "xo1VInw-SKc",
+        "name": "Fight Song",
+        "artist_name": "Rachel Platten",
+        "artist": 8
+    },
+    "model": "bet.song",
+    "pk": 9
+},
+{
+    "fields": {
+        "youtube_link": "6JCLY0Rlx6Q",
+        "name": "Shut Up And Dance",
+        "artist_name": "WALK THE MOON",
+        "artist": 9
+    },
+    "model": "bet.song",
+    "pk": 10
+},
+{
+    "fields": {
+        "youtube_link": "yzTuBuRdAyA",
+        "name": "The Hills",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 11
+},
+{
+    "fields": {
+        "youtube_link": "nntGTK2Fhb0",
+        "name": "Where Are U Now",
+        "artist_name": "Skrillex & Diplo With Justin Bieber",
+        "artist": 10
+    },
+    "model": "bet.song",
+    "pk": 12
+},
+{
+    "fields": {
+        "youtube_link": "1TsVjvEkc4s",
+        "name": "Good For You",
+        "artist_name": "Selena Gomez Featuring A$AP Rocky",
+        "artist": 11
+    },
+    "model": "bet.song",
+    "pk": 13
+},
+{
+    "fields": {
+        "youtube_link": "Go7gn6dugu0",
+        "name": "Honey, I'm Good.",
+        "artist_name": "Andy Grammer",
+        "artist": 12
+    },
+    "model": "bet.song",
+    "pk": 14
+},
+{
+    "fields": {
+        "youtube_link": "YBHQbu5rbdQ",
+        "name": "Worth It",
+        "artist_name": "Fifth Harmony Featuring Kid Ink",
+        "artist": 13
+    },
+    "model": "bet.song",
+    "pk": 15
+},
+{
+    "fields": {
+        "youtube_link": "Pzz4Z-O7710",
+        "name": "679",
+        "artist_name": "Fetty Wap Featuring Remy Boyz",
+        "artist": 7
+    },
+    "model": "bet.song",
+    "pk": 16
+},
+{
+    "fields": {
+        "youtube_link": "OPf0YbXqDm0",
+        "name": "Uptown Funk!",
+        "artist_name": "Mark Ronson Featuring Bruno Mars",
+        "artist": 14
+    },
+    "model": "bet.song",
+    "pk": 17
+},
+{
+    "fields": {
+        "youtube_link": "uO59tfQ2TbA",
+        "name": "Hey Mama",
+        "artist_name": "David Guetta Featuring Nicki Minaj, Bebe Rexha & Afrojack",
+        "artist": 15
+    },
+    "model": "bet.song",
+    "pk": 18
+},
+{
+    "fields": {
+        "youtube_link": "il9nqWw9W3Y",
+        "name": "Cool For The Summer",
+        "artist_name": "Demi Lovato",
+        "artist": 16
+    },
+    "model": "bet.song",
+    "pk": 19
+},
+{
+    "fields": {
+        "youtube_link": "nSDgHBxUbVQ",
+        "name": "Photograph",
+        "artist_name": "Ed Sheeran",
+        "artist": 17
+    },
+    "model": "bet.song",
+    "pk": 20
+},
+{
+    "fields": {
+        "youtube_link": "ut9ThAbfde0",
+        "name": "All Eyes On You",
+        "artist_name": "Meek Mill Featuring Chris Brown & Nicki Minaj",
+        "artist": 18
+    },
+    "model": "bet.song",
+    "pk": 21
+},
+{
+    "fields": {
+        "youtube_link": "aPxVSCfoYnU",
+        "name": "Post To Be",
+        "artist_name": "Omarion Featuring Chris Brown & Jhene Aiko",
+        "artist": 19
+    },
+    "model": "bet.song",
+    "pk": 22
+},
+{
+    "fields": {
+        "youtube_link": "rClUOdS5Zyw",
+        "name": "Want To Want Me",
+        "artist_name": "Jason Derulo",
+        "artist": 20
+    },
+    "model": "bet.song",
+    "pk": 23
+},
+{
+    "fields": {
+        "youtube_link": "nsiN0W15w0U",
+        "name": "Classic Man",
+        "artist_name": "Jidenna Featuring Roman GianArthur",
+        "artist": 21
+    },
+    "model": "bet.song",
+    "pk": 24
+},
+{
+    "fields": {
+        "youtube_link": "09R8_2nJtjg",
+        "name": "Sugar",
+        "artist_name": "Maroon 5",
+        "artist": 22
+    },
+    "model": "bet.song",
+    "pk": 25
+},
+{
+    "fields": {
+        "youtube_link": "2VTxYQL2SbA",
+        "name": "Uma Thurman",
+        "artist_name": "Fall Out Boy",
+        "artist": 23
+    },
+    "model": "bet.song",
+    "pk": 26
+},
+{
+    "fields": {
+        "youtube_link": "bWMw4vE3J8s",
+        "name": "Flex (Ooh Ooh Ooh)",
+        "artist_name": "Rich Homie Quan",
+        "artist": 24
+    },
+    "model": "bet.song",
+    "pk": 27
+},
+{
+    "fields": {
+        "youtube_link": "lp-EO5I60KA",
+        "name": "Thinking Out Loud",
+        "artist_name": "Ed Sheeran",
+        "artist": 17
+    },
+    "model": "bet.song",
+    "pk": 28
+},
+{
+    "fields": {
+        "youtube_link": "Gz2oHRD2pF4",
+        "name": "Kick The Dust Up",
+        "artist_name": "Luke Bryan",
+        "artist": 25
+    },
+    "model": "bet.song",
+    "pk": 29
+},
+{
+    "fields": {
+        "youtube_link": "waU75jdUnYw",
+        "name": "Earned It (Fifty Shades Of Grey)",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 30
+},
+{
+    "fields": {
+        "youtube_link": "B3eAMGXFw1o",
+        "name": "B**** Better Have My Money",
+        "artist_name": "Rihanna",
+        "artist": 26
+    },
+    "model": "bet.song",
+    "pk": 31
+},
+{
+    "fields": {
+        "youtube_link": "1FhRhzAWzLA",
+        "name": "House Party",
+        "artist_name": "Sam Hunt",
+        "artist": 27
+    },
+    "model": "bet.song",
+    "pk": 32
+},
+{
+    "fields": {
+        "youtube_link": "AJtDXIazrMo",
+        "name": "Love Me Like You Do",
+        "artist_name": "Ellie Goulding",
+        "artist": 28
+    },
+    "model": "bet.song",
+    "pk": 33
+},
+{
+    "fields": {
+        "youtube_link": "aBn7bjy9c4U",
+        "name": "You Know You Like It",
+        "artist_name": "DJ Snake & AlunaGeorge",
+        "artist": 29
+    },
+    "model": "bet.song",
+    "pk": 34
+},
+{
+    "fields": {
+        "youtube_link": "AzRyxGBGiAE",
+        "name": "Talking Body",
+        "artist_name": "Tove Lo",
+        "artist": 30
+    },
+    "model": "bet.song",
+    "pk": 35
+},
+{
+    "fields": {
+        "youtube_link": "igNVdlXhKcI",
+        "name": "Marvin Gaye",
+        "artist_name": "Charlie Puth Featuring Meghan Trainor",
+        "artist": 31
+    },
+    "model": "bet.song",
+    "pk": 36
+},
+{
+    "fields": {
+        "youtube_link": "iXi6IHFHeIA",
+        "name": "Take Your Time",
+        "artist_name": "Sam Hunt",
+        "artist": 27
+    },
+    "model": "bet.song",
+    "pk": 37
+},
+{
+    "fields": {
+        "youtube_link": "hGKK8eGQQEk",
+        "name": "Nasty Freestyle",
+        "artist_name": "T-Wayne",
+        "artist": 32
+    },
+    "model": "bet.song",
+    "pk": 38
+},
+{
+    "fields": {
+        "youtube_link": "dXTBbM21plg",
+        "name": "Slow Motion",
+        "artist_name": "Trey Songz",
+        "artist": 33
+    },
+    "model": "bet.song",
+    "pk": 39
+},
+{
+    "fields": {
+        "youtube_link": "EgRrxFsX538",
+        "name": "R.I.C.O.",
+        "artist_name": "Meek Mill Featuring Drake",
+        "artist": 18
+    },
+    "model": "bet.song",
+    "pk": 40
+},
+{
+    "fields": {
+        "youtube_link": "VbfpW0pbvaU",
+        "name": "Stitches",
+        "artist_name": "Shawn Mendes",
+        "artist": 34
+    },
+    "model": "bet.song",
+    "pk": 41
+},
+{
+    "fields": {
+        "youtube_link": "JYZMT8otKdI",
+        "name": "Girl Crush",
+        "artist_name": "Little Big Town",
+        "artist": 35
+    },
+    "model": "bet.song",
+    "pk": 42
+},
+{
+    "fields": {
+        "youtube_link": "heyIXXCfyaM",
+        "name": "Crash And Burn",
+        "artist_name": "Thomas Rhett",
+        "artist": 36
+    },
+    "model": "bet.song",
+    "pk": 43
+},
+{
+    "fields": {
+        "youtube_link": "KWZGAExj-es",
+        "name": "Elastic Heart",
+        "artist_name": "Sia",
+        "artist": 37
+    },
+    "model": "bet.song",
+    "pk": 44
+},
+{
+    "fields": {
+        "youtube_link": "7TvfG6IzBa0",
+        "name": "Be Real",
+        "artist_name": "Kid Ink Featuring DeJ Loaf",
+        "artist": 38
+    },
+    "model": "bet.song",
+    "pk": 45
+},
+{
+    "fields": {
+        "youtube_link": "Tw8mpgccugc",
+        "name": "I Don't Like It, I Love It",
+        "artist_name": "Flo Rida Featuring Robin Thicke & Verdine White",
+        "artist": 39
+    },
+    "model": "bet.song",
+    "pk": 46
+},
+{
+    "fields": {
+        "youtube_link": "ta1dPhkAk1M",
+        "name": "Renegades",
+        "artist_name": "X Ambassadors",
+        "artist": 40
+    },
+    "model": "bet.song",
+    "pk": 47
+},
+{
+    "fields": {
+        "youtube_link": "mQPjKSVe1tQ",
+        "name": "Buy Me A Boat",
+        "artist_name": "Chris Janson",
+        "artist": 41
+    },
+    "model": "bet.song",
+    "pk": 48
+},
+{
+    "fields": {
+        "youtube_link": "6LPDBZXgdA0",
+        "name": "Loving You Easy",
+        "artist_name": "Zac Brown Band",
+        "artist": 42
+    },
+    "model": "bet.song",
+    "pk": 49
+},
+{
+    "fields": {
+        "youtube_link": "nfWlot6h_JM",
+        "name": "Shake It Off",
+        "artist_name": "Taylor Swift",
+        "artist": 4
+    },
+    "model": "bet.song",
+    "pk": 50
+},
+{
+    "fields": {
+        "youtube_link": "8IMn4c4MwM0",
+        "name": "One Hell Of An Amen",
+        "artist_name": "Brantley Gilbert",
+        "artist": 43
+    },
+    "model": "bet.song",
+    "pk": 51
+},
+{
+    "fields": {
+        "youtube_link": "dV0eMaIFlvA",
+        "name": "Like A Wrecking Ball",
+        "artist_name": "Eric Church",
+        "artist": 44
+    },
+    "model": "bet.song",
+    "pk": 52
+},
+{
+    "fields": {
+        "youtube_link": "SYbh6ob_R9M",
+        "name": "This Could Be Us",
+        "artist_name": "Rae Sremmurd",
+        "artist": 45
+    },
+    "model": "bet.song",
+    "pk": 53
+},
+{
+    "fields": {
+        "youtube_link": "WFz1gCZSmdE",
+        "name": "She's Kinda Hot",
+        "artist_name": "5 Seconds Of Summer",
+        "artist": 46
+    },
+    "model": "bet.song",
+    "pk": 54
+},
+{
+    "fields": {
+        "youtube_link": "56m-t2PeKg8",
+        "name": "Kiss You In The Morning",
+        "artist_name": "Michael Ray",
+        "artist": 47
+    },
+    "model": "bet.song",
+    "pk": 55
+},
+{
+    "fields": {
+        "youtube_link": "snZsBXGjV2Y",
+        "name": "John Cougar, John Deere, John 3:16",
+        "artist_name": "Keith Urban",
+        "artist": 48
+    },
+    "model": "bet.song",
+    "pk": 56
+},
+{
+    "fields": {
+        "youtube_link": "jKbR7u8J5PU",
+        "name": "Fun",
+        "artist_name": "Pitbull Featuring Chris Brown",
+        "artist": 49
+    },
+    "model": "bet.song",
+    "pk": 57
+},
+{
+    "fields": {
+        "youtube_link": "NtTLfSOujTI",
+        "name": "Planes",
+        "artist_name": "Jeremih Featuring J. Cole",
+        "artist": 50
+    },
+    "model": "bet.song",
+    "pk": 58
+},
+{
+    "fields": {
+        "youtube_link": "zsM8GD2Q4nU",
+        "name": "Tonight Looks Good On You",
+        "artist_name": "Jason Aldean",
+        "artist": 51
+    },
+    "model": "bet.song",
+    "pk": 59
+},
+{
+    "fields": {
+        "youtube_link": "6GUm5g8SG4o",
+        "name": "Locked Away",
+        "artist_name": "R. City Featuring Adam Levine",
+        "artist": 52
+    },
+    "model": "bet.song",
+    "pk": 60
+},
+{
+    "fields": {
+        "youtube_link": "mpc3ffTLm_g",
+        "name": "Young & Crazy",
+        "artist_name": "Frankie Ballard",
+        "artist": 53
+    },
+    "model": "bet.song",
+    "pk": 61
+},
+{
+    "fields": {
+        "youtube_link": "IvN5h9BE444",
+        "name": "The Night Is Still Young",
+        "artist_name": "Nicki Minaj",
+        "artist": 54
+    },
+    "model": "bet.song",
+    "pk": 62
+},
+{
+    "fields": {
+        "youtube_link": "2_t0ffY3JvE",
+        "name": "No Sleeep",
+        "artist_name": "Janet Featuring J. Cole",
+        "artist": 55
+    },
+    "model": "bet.song",
+    "pk": 63
+},
+{
+    "fields": {
+        "youtube_link": "GWVBRuGVlHI",
+        "name": "Hell Of A Night",
+        "artist_name": "Dustin Lynch",
+        "artist": 56
+    },
+    "model": "bet.song",
+    "pk": 64
+},
+{
+    "fields": {
+        "youtube_link": "KoQrH6EMnas",
+        "name": "Sangria",
+        "artist_name": "Blake Shelton",
+        "artist": 57
+    },
+    "model": "bet.song",
+    "pk": 65
+},
+{
+    "fields": {
+        "youtube_link": "QWVAJ7xqqGU",
+        "name": "Lose My Mind",
+        "artist_name": "Brett Eldredge",
+        "artist": 58
+    },
+    "model": "bet.song",
+    "pk": 66
+},
+{
+    "fields": {
+        "youtube_link": "Ix8ocFEMa1o",
+        "name": "Ghost Town",
+        "artist_name": "Adam Lambert",
+        "artist": 59
+    },
+    "model": "bet.song",
+    "pk": 67
+},
+{
+    "fields": {
+        "youtube_link": "2-MBfn8XjIU",
+        "name": "Like I'm Gonna Lose You",
+        "artist_name": "Meghan Trainor Featuring John Legend",
+        "artist": 60
+    },
+    "model": "bet.song",
+    "pk": 68
+},
+{
+    "fields": {
+        "youtube_link": "UL0TTihpfxA",
+        "name": "Love You Like That",
+        "artist_name": "Canaan Smith",
+        "artist": 61
+    },
+    "model": "bet.song",
+    "pk": 69
+},
+{
+    "fields": {
+        "youtube_link": "eCGV26aj-mM",
+        "name": "Wet Dreamz",
+        "artist_name": "J. Cole",
+        "artist": 62
+    },
+    "model": "bet.song",
+    "pk": 70
+},
+{
+    "fields": {
+        "youtube_link": "wKl6umkwKfU",
+        "name": "Commas",
+        "artist_name": "Future",
+        "artist": 63
+    },
+    "model": "bet.song",
+    "pk": 71
+},
+{
+    "fields": {
+        "youtube_link": "aE2drlA8vf8",
+        "name": "Should've Been Us",
+        "artist_name": "Tori Kelly",
+        "artist": 64
+    },
+    "model": "bet.song",
+    "pk": 72
+},
+{
+    "fields": {
+        "youtube_link": "Wa64gOwuIyE",
+        "name": "This Summer's Gonna Hurt...",
+        "artist_name": "Maroon 5",
+        "artist": 22
+    },
+    "model": "bet.song",
+    "pk": 73
+},
+{
+    "fields": {
+        "youtube_link": "O-a4ttJnbBk",
+        "name": "Real Life",
+        "artist_name": "Jake Owen",
+        "artist": 65
+    },
+    "model": "bet.song",
+    "pk": 74
+},
+{
+    "fields": {
+        "youtube_link": "cNw8A5pwbVI",
+        "name": "Do It Again",
+        "artist_name": "Pia Mia Featuring Chris Brown & Tyga",
+        "artist": 66
+    },
+    "model": "bet.song",
+    "pk": 75
+},
+{
+    "fields": {
+        "youtube_link": "uU_FFtbCcLc",
+        "name": "El Perdon",
+        "artist_name": "Nicky Jam & Enrique Iglesias",
+        "artist": 67
+    },
+    "model": "bet.song",
+    "pk": 76
+},
+{
+    "fields": {
+        "youtube_link": "0uLI6BnVh6w",
+        "name": "Ex's & Oh's",
+        "artist_name": "Elle King",
+        "artist": 68
+    },
+    "model": "bet.song",
+    "pk": 77
+},
+{
+    "fields": {
+        "youtube_link": "kjWHpTkH7pA",
+        "name": "Fire N Gold",
+        "artist_name": "Bea Miller",
+        "artist": 69
+    },
+    "model": "bet.song",
+    "pk": 78
+},
+{
+    "fields": {
+        "youtube_link": "tzB3JB-0zk4",
+        "name": "Burning House",
+        "artist_name": "Cam",
+        "artist": 70
+    },
+    "model": "bet.song",
+    "pk": 79
+},
+{
+    "fields": {
+        "youtube_link": "KfDr_7LN-Ew",
+        "name": "Fly",
+        "artist_name": "Maddie & Tae",
+        "artist": 71
+    },
+    "model": "bet.song",
+    "pk": 80
+},
+{
+    "fields": {
+        "youtube_link": "lw3Or6eqIpI",
+        "name": "Where Ya At",
+        "artist_name": "Future Featuring Drake",
+        "artist": 63
+    },
+    "model": "bet.song",
+    "pk": 81
+},
+{
+    "fields": {
+        "youtube_link": "EgqUJOudrcM",
+        "name": "How Deep Is Your Love",
+        "artist_name": "Calvin Harris & Disciples",
+        "artist": 72
+    },
+    "model": "bet.song",
+    "pk": 82
+},
+{
+    "fields": {
+        "youtube_link": "HqIoVb9zLVg",
+        "name": "Good Thing",
+        "artist_name": "Sage The Gemini Featuring Nick Jonas",
+        "artist": 73
+    },
+    "model": "bet.song",
+    "pk": 83
+},
+{
+    "fields": {
+        "youtube_link": "n1a7o44WxNo",
+        "name": "Beautiful Now",
+        "artist_name": "Zedd Featuring Jon Bellion",
+        "artist": 74
+    },
+    "model": "bet.song",
+    "pk": 84
+},
+{
+    "fields": {
+        "youtube_link": "4YqV8n_kfsU",
+        "name": "How Many Times",
+        "artist_name": "DJ Khaled Featuring Chris Brown, Lil Wayne & Big Sean",
+        "artist": 75
+    },
+    "model": "bet.song",
+    "pk": 85
+},
+{
+    "fields": {
+        "youtube_link": "6E8FGdIl7HM",
+        "name": "Crushin' It",
+        "artist_name": "Brad Paisley",
+        "artist": 76
+    },
+    "model": "bet.song",
+    "pk": 86
+},
+{
+    "fields": {
+        "youtube_link": "2r6N2JQQwg0",
+        "name": "Love Me Like You Mean It",
+        "artist_name": "Kelsea Ballerini",
+        "artist": 77
+    },
+    "model": "bet.song",
+    "pk": 87
+},
+{
+    "fields": {
+        "youtube_link": "XNwwZ56xz8A",
+        "name": "The Matrimony",
+        "artist_name": "Wale Featuring Usher",
+        "artist": 78
+    },
+    "model": "bet.song",
+    "pk": 88
+},
+{
+    "fields": {
+        "youtube_link": "VrgCwAM06Yg",
+        "name": "Break Up With Him",
+        "artist_name": "Old Dominion",
+        "artist": 79
+    },
+    "model": "bet.song",
+    "pk": 89
+},
+{
+    "fields": {
+        "youtube_link": "nNi0gyO41VQ",
+        "name": "Cheyenne",
+        "artist_name": "Jason Derulo",
+        "artist": 20
+    },
+    "model": "bet.song",
+    "pk": 90
+},
+{
+    "fields": {
+        "youtube_link": "zY9es8R4PD4",
+        "name": "Save It For A Rainy Day",
+        "artist_name": "Kenny Chesney",
+        "artist": 80
+    },
+    "model": "bet.song",
+    "pk": 91
+},
+{
+    "fields": {
+        "youtube_link": "kMAzstG5O7E",
+        "name": "Bright",
+        "artist_name": "Echosmith",
+        "artist": 81
+    },
+    "model": "bet.song",
+    "pk": 92
+},
+{
+    "fields": {
+        "youtube_link": "hxcmik9Rs40",
+        "name": "I'm Comin' Over",
+        "artist_name": "Chris Young",
+        "artist": 82
+    },
+    "model": "bet.song",
+    "pk": 93
+},
+{
+    "fields": {
+        "youtube_link": "Z-48u_uWMHY",
+        "name": "Alright",
+        "artist_name": "Kendrick Lamar",
+        "artist": 83
+    },
+    "model": "bet.song",
+    "pk": 94
+},
+{
+    "fields": {
+        "youtube_link": "wQfP1lcJ_eo",
+        "name": "Anything Goes",
+        "artist_name": "Florida Georgia Line",
+        "artist": 84
+    },
+    "model": "bet.song",
+    "pk": 95
+},
+{
+    "fields": {
+        "youtube_link": "7YAVn466YBc",
+        "name": "Kings Never Die",
+        "artist_name": "Eminem Featuring Gwen Stefani",
+        "artist": 85
+    },
+    "model": "bet.song",
+    "pk": 96
+},
+{
+    "fields": {
+        "youtube_link": "0OkB6p_FZAw",
+        "name": "Yoga",
+        "artist_name": "Janelle Monae & Jidenna",
+        "artist": 86
+    },
+    "model": "bet.song",
+    "pk": 97
+},
+{
+    "fields": {
+        "youtube_link": "9w9dXWU5nMI",
+        "name": "Back It Up",
+        "artist_name": "Prince Royce Featuring Jennifer Lopez & Pitbull",
+        "artist": 87
+    },
+    "model": "bet.song",
+    "pk": 98
+},
+{
+    "fields": {
+        "youtube_link": "xeugznpGKPA",
+        "name": "Like I Can",
+        "artist_name": "Sam Smith",
+        "artist": 88
+    },
+    "model": "bet.song",
+    "pk": 99
+},
+{
+    "fields": {
+        "youtube_link": "GBVotNefYME",
+        "name": "One Man Can Change The World",
+        "artist_name": "Big Sean Featuring Kanye West & John Legend",
+        "artist": 89
+    },
+    "model": "bet.song",
+    "pk": 100
+},
+{
+    "fields": {
+        "youtube_link": "kY2pJsOZvc4",
+        "name": "Strip It Down",
+        "artist_name": "Luke Bryan",
+        "artist": 25
+    },
+    "model": "bet.song",
+    "pk": 101
+},
+{
+    "fields": {
+        "youtube_link": "6VQJHSnGIXk",
+        "name": "Baby Be My Love Song",
+        "artist_name": "Easton Corbin",
+        "artist": 90
+    },
+    "model": "bet.song",
+    "pk": 102
+},
+{
+    "fields": {
+        "youtube_link": "KllQ8e9Ae0w",
+        "name": "Sippin' On Fire",
+        "artist_name": "Florida Georgia Line",
+        "artist": 84
+    },
+    "model": "bet.song",
+    "pk": 103
+},
+{
+    "fields": {
+        "youtube_link": "jfmc5pyISeE",
+        "name": "Blow A Bag",
+        "artist_name": "Future",
+        "artist": 63
+    },
+    "model": "bet.song",
+    "pk": 104
+},
+{
+    "fields": {
+        "youtube_link": "nky4me4NP70",
+        "name": "Tear In My Heart",
+        "artist_name": "twenty one pilots",
+        "artist": 91
+    },
+    "model": "bet.song",
+    "pk": 105
+},
+{
+    "fields": {
+        "youtube_link": "Fw_crqWYBCM",
+        "name": "Dance Like We're Making Love",
+        "artist_name": "Ciara",
+        "artist": 92
+    },
+    "model": "bet.song",
+    "pk": 106
+},
+{
+    "fields": {
+        "youtube_link": "8zqdo_Umd5c",
+        "name": "Somebody",
+        "artist_name": "Natalie La Rose Featuring Jeremih",
+        "artist": 93
+    },
+    "model": "bet.song",
+    "pk": 107
+},
+{
+    "fields": {
+        "youtube_link": "-CmadmM5cOk",
+        "name": "Style",
+        "artist_name": "Taylor Swift",
+        "artist": 4
+    },
+    "model": "bet.song",
+    "pk": 108
+},
+{
+    "fields": {
+        "youtube_link": "UkLp4S-x5b4",
+        "name": "Don't It",
+        "artist_name": "Billy Currington",
+        "artist": 94
+    },
+    "model": "bet.song",
+    "pk": 109
+},
+{
+    "fields": {
+        "youtube_link": "kxOYvI0pfLo",
+        "name": "Little Toy Guns",
+        "artist_name": "Carrie Underwood",
+        "artist": 95
+    },
+    "model": "bet.song",
+    "pk": 110
+},
+{
+    "fields": {
+        "youtube_link": "qV5lzRHrGeg",
+        "name": "I Really Like You",
+        "artist_name": "Carly Rae Jepsen",
+        "artist": 96
+    },
+    "model": "bet.song",
+    "pk": 111
+},
+{
+    "fields": {
+        "youtube_link": "v0jvDIYtEvE",
+        "name": "Lord Knows",
+        "artist_name": "Meek Mill",
+        "artist": 18
+    },
+    "model": "bet.song",
+    "pk": 112
+},
+{
+    "fields": {
+        "youtube_link": "J7Xvij3cBH0",
+        "name": "Jump Out The Face",
+        "artist_name": "Meek Mill Featuring Future",
+        "artist": 18
+    },
+    "model": "bet.song",
+    "pk": 113
+},
+{
+    "fields": {
+        "youtube_link": "jV69Z8IQRFA",
+        "name": "Hood Go Crazy",
+        "artist_name": "Tech N9Ne Featuring 2 Chainz & B.o.B",
+        "artist": 97
+    },
+    "model": "bet.song",
+    "pk": 114
+},
+{
+    "fields": {
+        "youtube_link": "F8Cg572dafQ",
+        "name": "G.D.F.R.",
+        "artist_name": "Flo Rida Featuring Sage The Gemini & Lookas",
+        "artist": 39
+    },
+    "model": "bet.song",
+    "pk": 115
+},
+{
+    "fields": {
+        "youtube_link": "d0n40GVcj64",
+        "name": "Love Is Your Name",
+        "artist_name": "Steven Tyler",
+        "artist": 98
+    },
+    "model": "bet.song",
+    "pk": 116
+},
+{
+    "fields": {
+        "youtube_link": "Y0HCuw7rjZU",
+        "name": "Bad For You",
+        "artist_name": "Meek Mill Featuring Nicki Minaj",
+        "artist": 18
+    },
+    "model": "bet.song",
+    "pk": 117
+},
+{
+    "fields": {
+        "youtube_link": "cX-9vTNQ4dY",
+        "name": "Diamond Rings And Old Barstools",
+        "artist_name": "Tim McGraw With Catherine Dunn",
+        "artist": 99
+    },
+    "model": "bet.song",
+    "pk": 118
+},
+{
+    "fields": {
+        "youtube_link": "gDWepmUXk3w",
+        "name": "Smoke",
+        "artist_name": "A Thousand Horses",
+        "artist": 100
+    },
+    "model": "bet.song",
+    "pk": 119
+},
+{
+    "fields": {
+        "youtube_link": "61Wm_qlVD4Q",
+        "name": "Brother",
+        "artist_name": "NEEDTOBREATHE Featuring Gavin DeGraw",
+        "artist": 101
+    },
+    "model": "bet.song",
+    "pk": 120
+},
+{
+    "fields": {
+        "youtube_link": "VHrLPs3_1Fs",
+        "name": "Budapest",
+        "artist_name": "George Ezra",
+        "artist": 102
+    },
+    "model": "bet.song",
+    "pk": 121
+},
+{
+    "fields": {
+        "youtube_link": "e-ORhEE9VVg",
+        "name": "Blank Space",
+        "artist_name": "Taylor Swift",
+        "artist": 4
+    },
+    "model": "bet.song",
+    "pk": 122
+},
+{
+    "fields": {
+        "youtube_link": "DJi7WupFqPQ",
+        "name": "Play No Games",
+        "artist_name": "Big Sean Featuring Chris Brown & Ty Dolla $ign",
+        "artist": 89
+    },
+    "model": "bet.song",
+    "pk": 123
+},
+{
+    "fields": {
+        "youtube_link": "9Z55sZ2oVY4",
+        "name": "Coffee",
+        "artist_name": "Miguel",
+        "artist": 103
+    },
+    "model": "bet.song",
+    "pk": 124
+},
+{
+    "fields": {
+        "youtube_link": "KMnicRhvkvA",
+        "name": "Know Yourself",
+        "artist_name": "Drake",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 125
+},
+{
+    "fields": {
+        "youtube_link": "DzwkcbTQ7ZE",
+        "name": "Flashlight",
+        "artist_name": "Jessie J",
+        "artist": 105
+    },
+    "model": "bet.song",
+    "pk": 126
+},
+{
+    "fields": {
+        "youtube_link": "Cvu0Q4Cl7pU",
+        "name": "My Way",
+        "artist_name": "Fetty Wap",
+        "artist": 7
+    },
+    "model": "bet.song",
+    "pk": 127
+},
+{
+    "fields": {
+        "youtube_link": "ShlW5plD_40",
+        "name": "Dear Future Husband",
+        "artist_name": "Meghan Trainor",
+        "artist": 60
+    },
+    "model": "bet.song",
+    "pk": 128
+},
+{
+    "fields": {
+        "youtube_link": "Wg92RrNhB8s",
+        "name": "One Last Time",
+        "artist_name": "Ariana Grande",
+        "artist": 106
+    },
+    "model": "bet.song",
+    "pk": 129
+},
+{
+    "fields": {
+        "youtube_link": "2_t0ffY3JvE",
+        "name": "No Sleeep",
+        "artist_name": "Janet",
+        "artist": 55
+    },
+    "model": "bet.song",
+    "pk": 130
+},
+{
+    "fields": {
+        "youtube_link": "7LnBvuzjpr4",
+        "name": "Energy",
+        "artist_name": "Drake",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 131
+},
+{
+    "fields": {
+        "youtube_link": "_XIANQM3xm0",
+        "name": "Wild Child",
+        "artist_name": "Kenny Chesney With Grace Potter",
+        "artist": 80
+    },
+    "model": "bet.song",
+    "pk": 132
+},
+{
+    "fields": {
+        "youtube_link": "2E4UpyTvBfs",
+        "name": "I Need Your Love",
+        "artist_name": "Shaggy Featuring Mohombi, Faydee, Costi",
+        "artist": 107
+    },
+    "model": "bet.song",
+    "pk": 133
+},
+{
+    "fields": {
+        "youtube_link": "7hPMmzKs62w",
+        "name": "B**** I'm Madonna",
+        "artist_name": "Madonna Featuring Nicki Minaj",
+        "artist": 108
+    },
+    "model": "bet.song",
+    "pk": 134
+},
+{
+    "fields": {
+        "youtube_link": "uV2uebhnqOw",
+        "name": "Pretty Girls",
+        "artist_name": "Britney Spears & Iggy Azalea",
+        "artist": 109
+    },
+    "model": "bet.song",
+    "pk": 135
+},
+{
+    "fields": {
+        "youtube_link": "RAzzv6Ks9nc",
+        "name": "Check",
+        "artist_name": "Young Thug",
+        "artist": 110
+    },
+    "model": "bet.song",
+    "pk": 136
+},
+{
+    "fields": {
+        "youtube_link": "M6t47RI4bns",
+        "name": "Blessings",
+        "artist_name": "Big Sean Featuring Drake",
+        "artist": 89
+    },
+    "model": "bet.song",
+    "pk": 137
+},
+{
+    "fields": {
+        "youtube_link": "HaMq2nn5ac0",
+        "name": "Lay Me Down",
+        "artist_name": "Sam Smith",
+        "artist": 88
+    },
+    "model": "bet.song",
+    "pk": 138
+},
+{
+    "fields": {
+        "youtube_link": "dpPXpHx9jO4",
+        "name": "Sparks",
+        "artist_name": "Hilary Duff",
+        "artist": 111
+    },
+    "model": "bet.song",
+    "pk": 139
+},
+{
+    "fields": {
+        "youtube_link": "dW6SkvErFEE",
+        "name": "Believe",
+        "artist_name": "Mumford & Sons",
+        "artist": 112
+    },
+    "model": "bet.song",
+    "pk": 140
+},
+{
+    "fields": {
+        "youtube_link": "_gB2iWln0ls",
+        "name": "I Don't Get Tired (#IDGT)",
+        "artist_name": "Kevin Gates Featuring August Alsina",
+        "artist": 113
+    },
+    "model": "bet.song",
+    "pk": 141
+},
+{
+    "fields": {
+        "youtube_link": "qqruUaIGX6Q",
+        "name": "Flicka Da Wrist",
+        "artist_name": "Chedda Da Connect",
+        "artist": 114
+    },
+    "model": "bet.song",
+    "pk": 142
+},
+{
+    "fields": {
+        "youtube_link": "Q_vS-a5MpYE",
+        "name": "Nasty",
+        "artist_name": "Bandit Gang Marco Featuring Dro",
+        "artist": 115
+    },
+    "model": "bet.song",
+    "pk": 143
+},
+{
+    "fields": {
+        "youtube_link": "nntGTK2Fhb0",
+        "name": "Where Are U Now",
+        "artist_name": "Skrillex & Diplo Featuring Justin Bieber",
+        "artist": 10
+    },
+    "model": "bet.song",
+    "pk": 144
+},
+{
+    "fields": {
+        "youtube_link": "bTXJQ5ql5Fw",
+        "name": "Time Of Our Lives",
+        "artist_name": "Pitbull & Ne-Yo",
+        "artist": 49
+    },
+    "model": "bet.song",
+    "pk": 145
+},
+{
+    "fields": {
+        "youtube_link": "U8UX2bbCHJw",
+        "name": "Chains",
+        "artist_name": "Nick Jonas",
+        "artist": 116
+    },
+    "model": "bet.song",
+    "pk": 146
+},
+{
+    "fields": {
+        "youtube_link": "WTXgzuenCCs",
+        "name": "3500",
+        "artist_name": "Travi$ Scott Featuring Future & 2 Chainz",
+        "artist": 117
+    },
+    "model": "bet.song",
+    "pk": 147
+},
+{
+    "fields": {
+        "youtube_link": "UfQOawFwx6w",
+        "name": "All Day",
+        "artist_name": "Kanye West Featuring Theophilus London, Allan Kingdom & Paul McCartney",
+        "artist": 118
+    },
+    "model": "bet.song",
+    "pk": 148
+},
+{
+    "fields": {
+        "youtube_link": "X46t8ZFqUB4",
+        "name": "I Want You To Know",
+        "artist_name": "Zedd Featuring Selena Gomez",
+        "artist": 74
+    },
+    "model": "bet.song",
+    "pk": 149
+},
+{
+    "fields": {
+        "youtube_link": "yEG2VTHS9yg",
+        "name": "L$D",
+        "artist_name": "A$AP Rocky",
+        "artist": 119
+    },
+    "model": "bet.song",
+    "pk": 150
+},
+{
+    "fields": {
+        "youtube_link": "UtZBA1bVbcs",
+        "name": "Everyday",
+        "artist_name": "A$AP Rocky Featuring Rod Stewart x Miguel x Mark Ronson",
+        "artist": 119
+    },
+    "model": "bet.song",
+    "pk": 151
+},
+{
+    "fields": {
+        "youtube_link": "rZXvEcBKMT8",
+        "name": "Phenomenal",
+        "artist_name": "Eminem",
+        "artist": 85
+    },
+    "model": "bet.song",
+    "pk": 152
+},
+{
+    "fields": {
+        "youtube_link": "CAID_2iKO5Y",
+        "name": "Ulay Oh",
+        "artist_name": "How I Became The Bomb",
+        "artist": 120
+    },
+    "model": "bet.song",
+    "pk": 153
+},
+{
+    "fields": {
+        "youtube_link": "EUS_ONfxRnQ",
+        "name": "Truffle Butter",
+        "artist_name": "Nicki Minaj Featuring Drake & Lil Wayne",
+        "artist": 54
+    },
+    "model": "bet.song",
+    "pk": 154
+},
+{
+    "fields": {
+        "youtube_link": "kt0g4dWxEBo",
+        "name": "FourFiveSeconds",
+        "artist_name": "Rihanna & Kanye West & Paul McCartney",
+        "artist": 26
+    },
+    "model": "bet.song",
+    "pk": 155
+},
+{
+    "fields": {
+        "youtube_link": "26OigVOPpZU",
+        "name": "Electric Body",
+        "artist_name": "A$AP Rocky Featuring ScHoolboy Q",
+        "artist": 119
+    },
+    "model": "bet.song",
+    "pk": 156
+},
+{
+    "fields": {
+        "youtube_link": "I26EwcssMbY",
+        "name": "You Changed Me",
+        "artist_name": "Jamie Foxx Featuring Chris Brown",
+        "artist": 121
+    },
+    "model": "bet.song",
+    "pk": 157
+},
+{
+    "fields": {
+        "youtube_link": "12CeaxLiMgE",
+        "name": "Get Low",
+        "artist_name": "Dillon Francis & DJ Snake",
+        "artist": 122
+    },
+    "model": "bet.song",
+    "pk": 158
+},
+{
+    "fields": {
+        "youtube_link": "7PCkvCPvDXk",
+        "name": "All About That Bass",
+        "artist_name": "Meghan Trainor",
+        "artist": 60
+    },
+    "model": "bet.song",
+    "pk": 159
+},
+{
+    "fields": {
+        "youtube_link": "8N8_CRpL6wk",
+        "name": "Homegrown",
+        "artist_name": "Zac Brown Band",
+        "artist": 42
+    },
+    "model": "bet.song",
+    "pk": 160
+},
+{
+    "fields": {
+        "youtube_link": "d4_6N-k5VS4",
+        "name": "Heartbeat Song",
+        "artist_name": "Kelly Clarkson",
+        "artist": 123
+    },
+    "model": "bet.song",
+    "pk": 161
+},
+{
+    "fields": {
+        "youtube_link": "okGcksYM0N8",
+        "name": "I Bet",
+        "artist_name": "Ciara",
+        "artist": 92
+    },
+    "model": "bet.song",
+    "pk": 162
+},
+{
+    "fields": {
+        "youtube_link": "hRK7PVJFbS8",
+        "name": "King Kunta",
+        "artist_name": "Kendrick Lamar",
+        "artist": 83
+    },
+    "model": "bet.song",
+    "pk": 163
+},
+{
+    "fields": {
+        "youtube_link": "31KOGb1MU4g",
+        "name": "Raise 'Em Up",
+        "artist_name": "Keith Urban Featuring Eric Church",
+        "artist": 48
+    },
+    "model": "bet.song",
+    "pk": 164
+},
+{
+    "fields": {
+        "youtube_link": "EQe-uA4v3T4",
+        "name": "Please",
+        "artist_name": "Sawyer Fredericks",
+        "artist": 124
+    },
+    "model": "bet.song",
+    "pk": 165
+},
+{
+    "fields": {
+        "youtube_link": "0Kg9xRooTVk",
+        "name": "Feeling Myself",
+        "artist_name": "Nicki Minaj Featuring Beyonce",
+        "artist": 54
+    },
+    "model": "bet.song",
+    "pk": 166
+},
+{
+    "fields": {
+        "youtube_link": "MYSVMgRr6pw",
+        "name": "Take Me To Church",
+        "artist_name": "Hozier",
+        "artist": 125
+    },
+    "model": "bet.song",
+    "pk": 167
+},
+{
+    "fields": {
+        "youtube_link": "zKCrSN9oXgQ",
+        "name": "Ayo",
+        "artist_name": "Chris Brown & Tyga",
+        "artist": 126
+    },
+    "model": "bet.song",
+    "pk": 168
+},
+{
+    "fields": {
+        "youtube_link": "fJSVMvPR91g",
+        "name": "Old Man",
+        "artist_name": "Sawyer Fredericks",
+        "artist": 124
+    },
+    "model": "bet.song",
+    "pk": 169
+},
+{
+    "fields": {
+        "youtube_link": "IhlcSFSDc54",
+        "name": "Change My Mind",
+        "artist_name": "Meghan Linsey",
+        "artist": 127
+    },
+    "model": "bet.song",
+    "pk": 170
+},
+{
+    "fields": {
+        "youtube_link": "MgJ7v8D8iFE",
+        "name": "She Don't Love You",
+        "artist_name": "Eric Paslay",
+        "artist": 128
+    },
+    "model": "bet.song",
+    "pk": 171
+},
+{
+    "fields": {
+        "youtube_link": "pXRviuL6vMY",
+        "name": "Stressed Out",
+        "artist_name": "twenty one pilots",
+        "artist": 91
+    },
+    "model": "bet.song",
+    "pk": 172
+},
+{
+    "fields": {
+        "youtube_link": "FmTOn-Uam3w",
+        "name": "Games",
+        "artist_name": "Luke Bryan",
+        "artist": 25
+    },
+    "model": "bet.song",
+    "pk": 173
+},
+{
+    "fields": {
+        "youtube_link": "Jwgf3wmiA04",
+        "name": "Drag Me Down",
+        "artist_name": "One Direction",
+        "artist": 129
+    },
+    "model": "bet.song",
+    "pk": 174
+},
+{
+    "fields": {
+        "youtube_link": "TI3yi-JKItA",
+        "name": "Back To Back",
+        "artist_name": "Drake",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 175
+},
+{
+    "fields": {
+        "youtube_link": "LCBhkVOtdYM",
+        "name": "Rotten To The Core",
+        "artist_name": "Dove Cameron, Cameron Boyce, Booboo Stewart & Sofia Carson",
+        "artist": 130
+    },
+    "model": "bet.song",
+    "pk": 176
+},
+{
+    "fields": {
+        "youtube_link": "fB63ztKnGvo",
+        "name": "Omen",
+        "artist_name": "Disclosure Featuring Sam Smith",
+        "artist": 131
+    },
+    "model": "bet.song",
+    "pk": 177
+},
+{
+    "fields": {
+        "youtube_link": "wJVbqFGmOCU",
+        "name": "Hotline Bling",
+        "artist_name": "Drake",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 178
+},
+{
+    "fields": {
+        "youtube_link": "VobCFys_pyc",
+        "name": "Charged Up",
+        "artist_name": "Drake",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 179
+},
+{
+    "fields": {
+        "youtube_link": "b2AcxL88DoI",
+        "name": "100",
+        "artist_name": "The Game Featuring Drake",
+        "artist": 132
+    },
+    "model": "bet.song",
+    "pk": 180
+},
+{
+    "fields": {
+        "youtube_link": "sAJI06nEGH8",
+        "name": "Comfortable",
+        "artist_name": "K Camp",
+        "artist": 133
+    },
+    "model": "bet.song",
+    "pk": 181
+},
+{
+    "fields": {
+        "youtube_link": "EQY87ZICa9E",
+        "name": "Let Me See Ya Girl",
+        "artist_name": "Cole Swindell",
+        "artist": 134
+    },
+    "model": "bet.song",
+    "pk": 182
+},
+{
+    "fields": {
+        "youtube_link": "UKp2CrfmVfw",
+        "name": "Here",
+        "artist_name": "Alessia Cara",
+        "artist": 135
+    },
+    "model": "bet.song",
+    "pk": 183
+},
+{
+    "fields": {
+        "youtube_link": "JFYedt-KnB0",
+        "name": "If Only",
+        "artist_name": "Dove Cameron",
+        "artist": 136
+    },
+    "model": "bet.song",
+    "pk": 184
+},
+{
+    "fields": {
+        "youtube_link": "zKlSeGYvNC8",
+        "name": "Again",
+        "artist_name": "Fetty Wap",
+        "artist": 7
+    },
+    "model": "bet.song",
+    "pk": 185
+},
+{
+    "fields": {
+        "youtube_link": "QnxpHIl5Ynw",
+        "name": "High By The Beach",
+        "artist_name": "Lana Del Rey",
+        "artist": 137
+    },
+    "model": "bet.song",
+    "pk": 186
+},
+{
+    "fields": {
+        "youtube_link": "bMpFmHSgC4Q",
+        "name": "Love Myself",
+        "artist_name": "Hailee Steinfeld",
+        "artist": 138
+    },
+    "model": "bet.song",
+    "pk": 187
+},
+{
+    "fields": {
+        "youtube_link": "_4IfUFhQrxE",
+        "name": "Nothin' Like You",
+        "artist_name": "Dan + Shay",
+        "artist": 139
+    },
+    "model": "bet.song",
+    "pk": 188
+},
+{
+    "fields": {
+        "youtube_link": "vuha_SUwoBU",
+        "name": "Gonna Wanna Tonight",
+        "artist_name": "Chase Rice",
+        "artist": 140
+    },
+    "model": "bet.song",
+    "pk": 189
+},
+{
+    "fields": {
+        "youtube_link": "MkElfR_NPBI",
+        "name": "Black Magic",
+        "artist_name": "Little Mix",
+        "artist": 141
+    },
+    "model": "bet.song",
+    "pk": 190
+},
+{
+    "fields": {
+        "youtube_link": "RDCoM1x7U38",
+        "name": "100 Grandkids",
+        "artist_name": "Mac Miller",
+        "artist": 142
+    },
+    "model": "bet.song",
+    "pk": 191
+},
+{
+    "fields": {
+        "youtube_link": "2NuJ1bRMNgY",
+        "name": "Hit The Quan",
+        "artist_name": "@iHeartMemphis",
+        "artist": 143
+    },
+    "model": "bet.song",
+    "pk": 192
+},
+{
+    "fields": {
+        "youtube_link": "3ealNayCkaU",
+        "name": "Smoke Break",
+        "artist_name": "Carrie Underwood",
+        "artist": 95
+    },
+    "model": "bet.song",
+    "pk": 193
+},
+{
+    "fields": {
+        "youtube_link": "TMZi25Pq3T8",
+        "name": "Straight Outta Compton",
+        "artist_name": "N.W.A",
+        "artist": 144
+    },
+    "model": "bet.song",
+    "pk": 194
+},
+{
+    "fields": {
+        "youtube_link": "qgy2b6LXwoY",
+        "name": "Boyz-N-The Hood",
+        "artist_name": "Eazy-E",
+        "artist": 145
+    },
+    "model": "bet.song",
+    "pk": 195
+},
+{
+    "fields": {
+        "youtube_link": "taViGR5VT1U",
+        "name": "Levels",
+        "artist_name": "Nick Jonas",
+        "artist": 116
+    },
+    "model": "bet.song",
+    "pk": 196
+},
+{
+    "fields": {
+        "youtube_link": "e3XquGJfL_I",
+        "name": "No Role Modelz",
+        "artist_name": "J. Cole",
+        "artist": 62
+    },
+    "model": "bet.song",
+    "pk": 197
+},
+{
+    "fields": {
+        "youtube_link": "JGhoLcsr8GA",
+        "name": "Downtown",
+        "artist_name": "Macklemore & Ryan Lewis Featuring Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz",
+        "artist": 146
+    },
+    "model": "bet.song",
+    "pk": 198
+},
+{
+    "fields": {
+        "youtube_link": "hwzkbOitQ-U",
+        "name": "Liquor",
+        "artist_name": "Chris Brown",
+        "artist": 126
+    },
+    "model": "bet.song",
+    "pk": 199
+},
+{
+    "fields": {
+        "youtube_link": "6EFeoYHx88Y",
+        "name": "About You",
+        "artist_name": "Trey Songz",
+        "artist": 33
+    },
+    "model": "bet.song",
+    "pk": 200
+},
+{
+    "fields": {
+        "youtube_link": "G_zY_jSVXSU",
+        "name": "Cecilia And The Satellite",
+        "artist_name": "Andrew McMahon In The Wilderness",
+        "artist": 147
+    },
+    "model": "bet.song",
+    "pk": 201
+},
+{
+    "fields": {
+        "youtube_link": "0Pck0IQPsoY",
+        "name": "I'm To Blame",
+        "artist_name": "Kip Moore",
+        "artist": 148
+    },
+    "model": "bet.song",
+    "pk": 202
+},
+{
+    "fields": {
+        "youtube_link": "sEB80zSJfXc",
+        "name": "The Fix",
+        "artist_name": "Nelly Featuring Jeremih",
+        "artist": 149
+    },
+    "model": "bet.song",
+    "pk": 203
+},
+{
+    "fields": {
+        "youtube_link": "FcHIji-xPjk",
+        "name": "Fly Away",
+        "artist_name": "5 Seconds Of Summer",
+        "artist": 46
+    },
+    "model": "bet.song",
+    "pk": 204
+},
+{
+    "fields": {
+        "youtube_link": "DK_0jXPuIr0",
+        "name": "What Do You Mean?",
+        "artist_name": "Justin Bieber",
+        "artist": 150
+    },
+    "model": "bet.song",
+    "pk": 205
+},
+{
+    "fields": {
+        "youtube_link": "IdneKLhsWOQ",
+        "name": "Wildest Dreams",
+        "artist_name": "Taylor Swift",
+        "artist": 4
+    },
+    "model": "bet.song",
+    "pk": 206
+},
+{
+    "fields": {
+        "youtube_link": "u2GkESMkZpA",
+        "name": "El Perdon (Forgiveness)",
+        "artist_name": "Nicky Jam & Enrique Iglesias",
+        "artist": 67
+    },
+    "model": "bet.song",
+    "pk": 207
+},
+{
+    "fields": {
+        "youtube_link": "j1ngEIxopUU",
+        "name": "Tell Your Friends",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 208
+},
+{
+    "fields": {
+        "youtube_link": "gA4Tme43lao",
+        "name": "Acquainted",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 209
+},
+{
+    "fields": {
+        "youtube_link": "Qq-n0Hqg4Ik",
+        "name": "Antidote",
+        "artist_name": "Travi$ Scott",
+        "artist": 117
+    },
+    "model": "bet.song",
+    "pk": 210
+},
+{
+    "fields": {
+        "youtube_link": "O3Xkj4OINLo",
+        "name": "Prisoner",
+        "artist_name": "The Weeknd Featuring Lana Del Rey",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 211
+},
+{
+    "fields": {
+        "youtube_link": "C-TsD-QyaUc",
+        "name": "Real Life",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 212
+},
+{
+    "fields": {
+        "youtube_link": "kDWRw7CYIDk",
+        "name": "Burn Slow",
+        "artist_name": "Wiz Khalifa Featuring Rae Sremmurd",
+        "artist": 5
+    },
+    "model": "bet.song",
+    "pk": 213
+},
+{
+    "fields": {
+        "youtube_link": "SLsTskih7_I",
+        "name": "White Iverson",
+        "artist_name": "Post Malone",
+        "artist": 151
+    },
+    "model": "bet.song",
+    "pk": 214
+},
+{
+    "fields": {
+        "youtube_link": "c1nPYZGqfLA",
+        "name": "Dark Times",
+        "artist_name": "The Weeknd Featuring Ed Sheeran",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 215
+},
+{
+    "fields": {
+        "youtube_link": "VSP4DJtRbak",
+        "name": "New Americana",
+        "artist_name": "Halsey",
+        "artist": 152
+    },
+    "model": "bet.song",
+    "pk": 216
+},
+{
+    "fields": {
+        "youtube_link": "zZjSX01P5dE",
+        "name": "Ginza",
+        "artist_name": "J Balvin",
+        "artist": 153
+    },
+    "model": "bet.song",
+    "pk": 217
+},
+{
+    "fields": {
+        "youtube_link": "DXEj_IZmUKU",
+        "name": "Shameless",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 218
+},
+{
+    "fields": {
+        "youtube_link": "e4RMh7NLHPY",
+        "name": "Roots",
+        "artist_name": "Imagine Dragons",
+        "artist": 154
+    },
+    "model": "bet.song",
+    "pk": 219
+},
+{
+    "fields": {
+        "youtube_link": "zQaMTYuqpL0",
+        "name": "Losers",
+        "artist_name": "The Weeknd Featuring Labrinth",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 220
+},
+{
+    "fields": {
+        "youtube_link": "rQJVvNyqZUQ",
+        "name": "Jet Black Heart",
+        "artist_name": "5 Seconds Of Summer",
+        "artist": 46
+    },
+    "model": "bet.song",
+    "pk": 221
+},
+{
+    "fields": {
+        "youtube_link": "5kWXJk9Obcs",
+        "name": "In The Night",
+        "artist_name": "The Weeknd",
+        "artist": 2
+    },
+    "model": "bet.song",
+    "pk": 222
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Hit The Quan",
+        "artist_name": "iHeartMemphis",
+        "artist": 155
+    },
+    "model": "bet.song",
+    "pk": 223
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "On My Mind",
+        "artist_name": "Ellie Goulding",
+        "artist": 28
+    },
+    "model": "bet.song",
+    "pk": 224
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Same Old Love",
+        "artist_name": "Selena Gomez",
+        "artist": 11
+    },
+    "model": "bet.song",
+    "pk": 225
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Jumpman",
+        "artist_name": "Drake & Future",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 226
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Infinity",
+        "artist_name": "One Direction",
+        "artist": 129
+    },
+    "model": "bet.song",
+    "pk": 227
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Right Hand",
+        "artist_name": "Drake",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 228
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "RGF Island",
+        "artist_name": "Fetty Wap",
+        "artist": 7
+    },
+    "model": "bet.song",
+    "pk": 229
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Diamonds Dancing",
+        "artist_name": "Drake & Future",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 230
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "$ave Dat Money",
+        "artist_name": "Lil Dicky Featuring Fetty Wap & Rich Homie Quan",
+        "artist": 156
+    },
+    "model": "bet.song",
+    "pk": 231
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Big Rings",
+        "artist_name": "Drake & Future",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 232
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Digital Dash",
+        "artist_name": "Drake & Future",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 233
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Confident",
+        "artist_name": "Demi Lovato",
+        "artist": 16
+    },
+    "model": "bet.song",
+    "pk": 234
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Live From The Gutter",
+        "artist_name": "Drake & Future",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 235
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Scholarships",
+        "artist_name": "Drake & Future",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 236
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Gonna",
+        "artist_name": "Blake Shelton",
+        "artist": 57
+    },
+    "model": "bet.song",
+    "pk": 237
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "30 for 30 Freestyle",
+        "artist_name": "Drake",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 238
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "I'm The Plug",
+        "artist_name": "Drake & Future",
+        "artist": 104
+    },
+    "model": "bet.song",
+    "pk": 239
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Runnin' (Lose It All)",
+        "artist_name": "Naughty Boy Featuring Beyonce & Arrow Benjamin",
+        "artist": 157
+    },
+    "model": "bet.song",
+    "pk": 240
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Nothing But Trouble (Instagram Models)",
+        "artist_name": "Lil Wayne & Charlie Puth",
+        "artist": 158
+    },
+    "model": "bet.song",
+    "pk": 241
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Die A Happy Man",
+        "artist_name": "Thomas Rhett",
+        "artist": 36
+    },
+    "model": "bet.song",
+    "pk": 242
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Come Get Her",
+        "artist_name": "Rae Sremmurd",
+        "artist": 45
+    },
+    "model": "bet.song",
+    "pk": 243
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Powerful",
+        "artist_name": "Major Lazer Featuring Ellie Goulding & Tarrus Riley",
+        "artist": 6
+    },
+    "model": "bet.song",
+    "pk": 244
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Blase",
+        "artist_name": "Ty Dolla $ign Featuring Future & Rae Sremmurd",
+        "artist": 159
+    },
+    "model": "bet.song",
+    "pk": 245
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Hold Each Other",
+        "artist_name": "A Great Big World Featuring FUTURISTIC",
+        "artist": 160
+    },
+    "model": "bet.song",
+    "pk": 246
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Hold My Hand",
+        "artist_name": "Jess Glynne",
+        "artist": 161
+    },
+    "model": "bet.song",
+    "pk": 247
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Firestone",
+        "artist_name": "Kygo Featuring Conrad",
+        "artist": 162
+    },
+    "model": "bet.song",
+    "pk": 248
+},
+{
+    "fields": {
+        "youtube_link": null,
+        "name": "Hide Away",
+        "artist_name": "Daya",
+        "artist": 163
+    },
+    "model": "bet.song",
+    "pk": 249
+},
+{
+    "fields": {
+        "date": "2015-08-15"
+    },
+    "model": "bet.week",
+    "pk": 1
+},
+{
+    "fields": {
+        "date": "2015-08-08"
+    },
+    "model": "bet.week",
+    "pk": 2
+},
+{
+    "fields": {
+        "week": 1,
+        "date_time": "2015-08-10T18:34:37.442Z",
+        "has_won": "False",
+        "stake": 1.0,
+        "better": 1,
+        "bet_type": "3"
+    },
+    "model": "bet.bet",
+    "pk": 1
+},
+{
+    "fields": {
+        "choice": "1",
+        "odd": 1.99,
+        "bet": 1,
+        "song": 1
+    },
+    "model": "bet.betitem",
+    "pk": 1
+},
+{
+    "fields": {
+        "choice": "1",
+        "odd": 1.99,
+        "bet": 1,
+        "song": 2
+    },
+    "model": "bet.betitem",
+    "pk": 14
+},
+{
+    "fields": {
+        "week": 1,
+        "song": 1,
+        "odd_2": 1.84,
+        "odd_1": 1.9,
+        "position": 1,
+        "odd_x": 1.23
+    },
+    "model": "bet.position",
+    "pk": 1
+},
+{
+    "fields": {
+        "week": 1,
+        "song": 2,
+        "odd_2": 1.33,
+        "odd_1": 2.23,
+        "position": 2,
+        "odd_x": 2.56
+    },
+    "model": "bet.position",
+    "pk": 2
+},
+{
+    "fields": {
+        "week": 2,
+        "song": 1,
+        "odd_2": 1.84,
+        "odd_1": 1.9,
+        "position": 1,
+        "odd_x": 1.23
+    },
+    "model": "bet.position",
+    "pk": 3
+},
+{
+    "fields": {
+        "week": 2,
+        "song": 2,
+        "odd_2": 1.33,
+        "odd_1": 2.23,
+        "position": 4,
+        "odd_x": 2.56
+    },
+    "model": "bet.position",
+    "pk": 4
+},
+{
+    "fields": {
+        "username": "igorpejicw@gmail.com",
+        "first_name": "Igor",
+        "last_name": "Pejic",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "",
+        "email": "igorpejicw@gmail.com",
+        "date_joined": "2015-08-13T15:55:18.865Z"
+    },
+    "model": "auth.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "points": 100,
+        "user": 1
+    },
+    "model": "bet.better",
+    "pk": 1
+}
+]

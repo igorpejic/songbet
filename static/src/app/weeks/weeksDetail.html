@@ -1,0 +1,23 @@
+<div>
+  <h3>Week of: {{vm.week.date | date : "dd-MM-yyyy"}}</h3>
+  <table class="table">
+    <thead>
+      <th class="text-left">Position</th>
+      <th class="text-center">Change</th>
+      <th>Song</th>
+    </thead>
+    <tr ng-repeat="song in vm.week.songs" ng-mouseover="vm.hoverIn(song)" ng-mouseleave="vm.hoverOut(song)">
+      <td class="text-left" id="song-position">{{song.position}}.</td>
+      <td class="text-center" id="song-change" ng-bind-html="song.change | betChoice"></td>
+      <td>
+        <a href="{{song.song.youtube_link | youtubeLink:'video' }}" target="_blank">
+          <img src="{{song.song.youtube_link | youtubeLink:'thumbnail'}}" height="42" width="42" alt="Youtube video">&nbsp{{song.song.name}} - {{song.song.artist_name}}</a></td>
+      <!--
+      <td ng-if="song.commentFocus">
+        <textarea ng-model="song.comment"></textarea>
+        <button class="btn btn-primary" ng-click="vm.comment(vm.week, song, song.comment)">Leave a comment</button>
+      </td>
+      -->
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" ng-app="betApp">
+<head>
+<meta charset="utf-8">
+<title>Billboard betting</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/darkly/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-resource.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-cookies.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+<script src="https://cdn.jsdelivr.net/satellizer/0.11.2/satellizer.min.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/controllers.js"></script>
+<script src="/static/js/services.js"></script>
+<script src="/static/js/filters.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Billboard betting</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#/10bets/">Bet</a></li>
+          <li><a href="#/songs/">Songs</a></li>
+          <li><a href="#/weeks/">Weeks</a></li>
+        </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li><a>Login</a></li>
+          </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>
+<div ng-view></div>
+  </div>
+
+  </body>
+  </html>

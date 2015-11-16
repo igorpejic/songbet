@@ -1,0 +1,9 @@
+# do NOT track Python compilation files
+*.py[cod]
+*.swp
+*.skype
+var/images/*
+var/videos/*
+var/video_assets/*
+var/raw_videos/*
+var/

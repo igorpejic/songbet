@@ -1,0 +1,18 @@
+<div id="Mybets view" class="col-md-12">
+  <h2>
+    Weeks archive
+  </h2>
+    <table class="table table-hover">
+      <tr>
+        <th class="col-md-4">Date</th>
+        <th class="col-md-4 col-md-push-4">Leading song</th>
+      </tr>
+      <tr ng-repeat="week in vm.weeks">
+        <td><a ui-sref="weeksDetail({id: week.id})">{{week.date | date:'dd-MM-yyyy'}}</td>
+        <td>
+         <a href="{{week.topSong.youtube_link | youtubeLink:'video' }}" target="_blank">
+          <img src="{{week.topSong.youtube_link | youtubeLink:'thumbnail'}}" height="42" width="42" alt="Youtube video">&nbsp{{week.topSong.name}} - {{week.topSong.artist_name}}</a></td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,224 @@
+/*style.css*/
+.songGridStyle {
+    border: 1px solid rgb(212,212,212);
+    height: 92vh;
+}
+
+.betGridStyle {
+    border: 1px solid rgb(212,212,212);
+    height: 50vh;
+}
+
+.historyGridStyle {
+    border: 1px solid rgb(212,212,212);
+    height: 38vh;
+}
+
+.bet-button{
+    display: inline-block;
+    float:right;
+    margin-left: 25px;
+}
+
+.delete-button{
+    display: inline-block;
+    float:right;
+    margin-left: 25px;
+}
+
+.song_view_button{
+    float:right;
+}
+
+.link{
+    cursor: pointer;
+}
+
+div.welcome {
+    background: #48A3D4;
+}
+h1.welcome {
+    color: #113A58;
+    float: center;
+}
+
+.close {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    text-decoration: none;
+    display: inline-block;
+}
+.close:hover {
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: pointer;
+}
+
+.btn-choice:active {
+    background-color: red
+}
+
+.btn-table {
+    float: right;
+}
+
+.white-border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.stake-input {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: darkred;
+    padding-left: 15px;
+    width: 26%;
+}
+
+.arr-up {
+    color: green;
+}
+
+.arr-down {
+    color: red;
+}
+
+.arr-middle {
+    color: orange;
+}
+
+.arr-new {
+    color: gray;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+ .home-body {
+     text-align: center;
+ }
+
+ .navbar-nav-center {
+     float:none;
+     margin: 0 auto;
+     display: table;
+     table-layout: fixed;
+ }
+
+ .navbar-pseudo-a {
+    position: relative;
+    display:block;
+    padding: 10px 15px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #777;
+ }
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+.content {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+.footer {position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}

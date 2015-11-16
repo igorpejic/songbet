@@ -1,0 +1,3 @@
+# Spirit
+1. pip install django-spirit
+2. python manage.py createcachetable spirit_cache
