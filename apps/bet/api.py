@@ -256,8 +256,7 @@ class FacebookAuthView(SocialAuthView):
         user = self.get_or_create_user(profile)
         payload = jwt_payload_handler(user)
         token = jwt_encode_handler(payload)
-        return Response({'token': token.decode('unicode_escape')},
-                        status=status.HTTP_200_OK)
+        return Response({'token': token.decode('unicode_escape')}, status=status.HTTP_200_OK)
 
 
 class SocialUserView(GenericAPIView):
