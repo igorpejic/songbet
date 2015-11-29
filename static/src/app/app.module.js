@@ -15,7 +15,6 @@
       'app.bet',
       'app.leaderboard',
       'app.mybets',
-      'app.weeks',
       'ui-notification',
     ]).
         config(['NotificationProvider', function(NotificationProvider) {

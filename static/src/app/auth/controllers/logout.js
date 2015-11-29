@@ -5,11 +5,6 @@ angular.module('app.auth')
     }
     $auth.logout()
       .then(function() {
-        $alert({
-          content: 'You have been logged out',
-          animation: 'fadeZoomFadeDown',
-          type: 'material',
-          duration: 3
-        });
+        
       });
   });
