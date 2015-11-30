@@ -1,161 +1,161 @@
 <!doctype html>
 <html lang="en" ng-app="app">
 <head>
-  <base href="/app/">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <meta name="author" content="Song Bet | www.songbet.me">
-  <title>Song Bet</title>
-  <meta name="description" content="Song Bet is the unique place to bet on song popularity and discuss with friends.">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css styles/vendor.css -->
-  <!-- endbuild -->
-  <!-- build:css({.tmp,app}) styles/main.css -->
-  <!--<link rel="stylesheet" href="/static/styles/main.css">-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-  <!--<link rel="stylesheet" href="/static/src/app/auth/stylesheets/styles.css"/>-->
-  <link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap-social/bootstrap-social.css"/>
-  <link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="/static/bower_components/font-awesome/css/font-awesome.min.css"/>
-  <link rel="stylesheet" type="text/css" href="/static/bower_components/angular-ui-notification/dist/angular-ui-notification.min.css"/>
-  <link rel="shortcut icon" href="/static/src/content/favicon.ico" >
-  <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/simplex/bootstrap.min.css"/>-->
+<base href="/app/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<meta name="author" content="Song Bet | www.songbet.me">
+<title>Song Bet</title>
+<meta name="description" content="Song Bet is the unique place to bet on song popularity and discuss with friends.">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- build:css styles/vendor.css -->
+<!-- endbuild -->
+<!-- build:css({.tmp,app}) styles/main.css -->
+<!--<link rel="stylesheet" href="/static/styles/main.css">-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+<!--<link rel="stylesheet" href="/static/src/app/auth/stylesheets/styles.css"/>-->
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap-social/bootstrap-social.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/font-awesome/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/angular-ui-notification/dist/angular-ui-notification.min.css"/>
+<link rel="shortcut icon" href="/static/src/content/favicon.ico" >
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/simplex/bootstrap.min.css"/>-->
 
-  <link rel="stylesheet" type="text/css" href="/static/src/content/style.css"/>
+<link rel="stylesheet" type="text/css" href="/static/src/content/style.css"/>
 
-  <!-- endbuild -->
-  <!--[if !IE 7]>
+<!-- endbuild -->
+<!--[if !IE 7]>
   <style type="text/css">
     #wrap {display:table;height:100%}
   </style>
 <![endif]-->
-  </head>
-  <body>
-  <div id="wrap">
+</head>
+<body>
+<div id="wrap">
 
-    <!--[if lt IE 7]>
+  <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <ng-include src="'/static/src/app/auth/views/navbar.html'" ng-controller="NavbarCtrl"></ng-include>
-      </div><!--/.container-fluid -->
-    </nav>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ng-include src="'/static/src/app/auth/views/navbar.html'" ng-controller="NavbarCtrl"></ng-include>
+    </div><!--/.container-fluid -->
+  </nav>
 
 
-    <!--<div class="container">-->
-    <!-- Add your site or application content here -->
-    <div class="container content">
-      <ui-view/>
-    </div>
-    <!--</div>-->
+  <!--<div class="container">-->
+  <!-- Add your site or application content here -->
+  <div class="container content">
+    <ui-view/>
+  </div>
+  <!--</div>-->
+</div>
+
+<footer class="footer footer-distributed">
+
+  <div class="footer-right">
+
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+
   </div>
 
-  <footer class="footer footer-distributed">
+  <div class="footer-left">
 
-    <div class="footer-right">
+    <p class="footer-links">
+    <a ui-sref="singleBet">Home</a>
+    ·
+    <a href="/community/">Community</a>
+    ·
+    <a ui-sref="about">About</a>
+    ·
+    <a href="faq">Faq</a>
+    ·
+    <a ui-sref="contact">Contact us</a>
+    </p>
 
-      <a href="#"><i class="fa fa-youtube"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
+    <p>Song Bet &copy; 2015</p>
+  </div>
 
-    </div>
-
-    <div class="footer-left">
-
-      <p class="footer-links">
-      <a ui-sref="singleBet">Home</a>
-      ·
-      <a href="/community/">Community</a>
-      ·
-      <a ui-sref="about">About</a>
-      ·
-      <a href="faq">Faq</a>
-      ·
-      <a ui-sref="contact">Contact us</a>
-      </p>
-
-      <p>Song Bet &copy; 2015</p>
-    </div>
-
-  </footer>
-  <!--[if lt IE 9]>
+</footer>
+<!--[if lt IE 9]>
     <script src="/static/bower_components/es5-shim/es5-shim.js"></script>
     <script src="/static/bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/static/bower_components/jquery/dist/jquery.js"></script>
-  <script type="text/javascript">
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/static/bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
 $(function(){
     $('body').hide();
     });
 $(window).load(function() {
     $("body").show();
     });
-  </script>
-  <script src="/static/bower_components/angular/angular.js"></script>
-  <script src="/static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-cookies.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.min.js"></script>
-  <script src="/static/bower_components/angular-route/angular-route.js"></script>
-  <script src="/static/bower_components/satellizer/satellizer.js"></script>
-  <script src="/static/bower_components/angular-messages/angular-messages.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
-  <script src="/static/bower_components/angular-strap/dist/angular-strap.js"></script>
-  <script src="/static/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-  <script src="/static/bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
-  <script src="/static/bower_components/angular-messages/angular-messages.js"></script>
-  <script src="/static/bower_components/angular-animate/angular-animate.js"></script>
-  <script src="/static/bower_components/angular-messages/angular-messages.js"></script>
-  <script src="/static/bower_components/parallax/deploy/jquery.parallax.min.js"></script>
-  <script src="/static/bower_components/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+</script>
+<script src="/static/bower_components/angular/angular.js"></script>
+<script src="/static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.min.js"></script>
+<script src="/static/bower_components/angular-route/angular-route.js"></script>
+<script src="/static/bower_components/satellizer/satellizer.js"></script>
+<script src="/static/bower_components/angular-messages/angular-messages.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+<script src="/static/bower_components/angular-strap/dist/angular-strap.js"></script>
+<script src="/static/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/static/bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+<script src="/static/bower_components/angular-messages/angular-messages.js"></script>
+<script src="/static/bower_components/angular-animate/angular-animate.js"></script>
+<script src="/static/bower_components/angular-messages/angular-messages.js"></script>
+<script src="/static/bower_components/parallax/deploy/jquery.parallax.min.js"></script>
+<script src="/static/bower_components/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-  <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script src="/static/src/app/app.module.js"></script>
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="/static/src/app/app.module.js"></script>
 
-  <script src="/static/src/app/blocks/router/router.module.js"></script>
-  <script src="/static/src/app/blocks/router/routerHelperProvider.js"></script>
+<script src="/static/src/app/blocks/router/router.module.js"></script>
+<script src="/static/src/app/blocks/router/routerHelperProvider.js"></script>
 
-  <script src="/static/src/app/core/core.module.js"></script>
-  <script src="/static/src/app/core/dataservice.js"></script>
-  <script src="/static/src/app/core/config.js"></script>
+<script src="/static/src/app/core/core.module.js"></script>
+<script src="/static/src/app/core/dataservice.js"></script>
+<script src="/static/src/app/core/config.js"></script>
 
-  <script src="/static/src/app/bet/bet.router.js"></script>
-  <script src="/static/src/app/bet/bet.module.js"></script>
-  <script src="/static/src/app/bet/singleBet.controller.js"></script>
-  <script src="/static/src/app/bet/config.route.js"></script>
-  <script src="/static/src/app/bet/betChoice.filter.js"></script>
-  <script src="/static/src/app/bet/youtubeLink.filter.js"></script>
+<script src="/static/src/app/bet/bet.router.js"></script>
+<script src="/static/src/app/bet/bet.module.js"></script>
+<script src="/static/src/app/bet/singleBet.controller.js"></script>
+<script src="/static/src/app/bet/config.route.js"></script>
+<script src="/static/src/app/bet/betChoice.filter.js"></script>
+<script src="/static/src/app/bet/youtubeLink.filter.js"></script>
 
-  <script src="/static/src/app/leaderboard/leaderboard.router.js"></script>
-  <script src="/static/src/app/leaderboard/leaderboard.module.js"></script>
-  <script src="/static/src/app/leaderboard/leaderboard.controller.js"></script>
-  <script src="/static/src/app/leaderboard/config.route.js"></script>
+<script src="/static/src/app/leaderboard/leaderboard.router.js"></script>
+<script src="/static/src/app/leaderboard/leaderboard.module.js"></script>
+<script src="/static/src/app/leaderboard/leaderboard.controller.js"></script>
+<script src="/static/src/app/leaderboard/config.route.js"></script>
 
-  <script src="/static/src/app/mybets/mybets.router.js"></script>
-  <script src="/static/src/app/mybets/mybets.module.js"></script>
-  <script src="/static/src/app/mybets/mybets.controller.js"></script>
-  <script src="/static/src/app/mybets/config.route.js"></script>
-  <script src="/static/src/app/mybets/mybetsDetail.controller.js"></script>
-  <script src="/static/src/app/mybets/betStatus.filter.js"></script>
+<script src="/static/src/app/mybets/mybets.router.js"></script>
+<script src="/static/src/app/mybets/mybets.module.js"></script>
+<script src="/static/src/app/mybets/mybets.controller.js"></script>
+<script src="/static/src/app/mybets/config.route.js"></script>
+<script src="/static/src/app/mybets/mybetsDetail.controller.js"></script>
+<script src="/static/src/app/mybets/betStatus.filter.js"></script>
 
-  <!--
+<!--
 <script src="/static/src/app/weeks/weeks.router.js"></script>
 <script src="/static/src/app/weeks/weeks.module.js"></script>
 <script src="/static/src/app/weeks/weeks.controller.js"></script>
@@ -163,26 +163,26 @@ $(window).load(function() {
 <script src="/static/src/app/weeks/weeksDetail.controller.js"></script>
 -->
 
-  <script src="/static/src/app/auth/auth.router.js"></script>
-  <script src="/static/src/app/auth/auth.module.js"></script>
-  <script src="/static/src/app/auth/directives/passwordStrength.js"></script>
-  <script src="/static/src/app/auth/controllers/navbar.js"></script>
-  <script src="/static/src/app/auth/controllers/login.js"></script>
-  <script src="/static/src/app/auth/controllers/signup.js"></script>
-  <script src="/static/src/app/auth/controllers/logout.js"></script>
-  <script src="/static/src/app/auth/controllers/profile.js"></script>
-  <script src="/static/src/app/auth/services/account.js"></script>
-  <script src="/static/src/app/auth/config.route.js"></script>
+<script src="/static/src/app/auth/auth.router.js"></script>
+<script src="/static/src/app/auth/auth.module.js"></script>
+<script src="/static/src/app/auth/directives/passwordStrength.js"></script>
+<script src="/static/src/app/auth/controllers/navbar.js"></script>
+<script src="/static/src/app/auth/controllers/login.js"></script>
+<script src="/static/src/app/auth/controllers/signup.js"></script>
+<script src="/static/src/app/auth/controllers/logout.js"></script>
+<script src="/static/src/app/auth/controllers/profile.js"></script>
+<script src="/static/src/app/auth/services/account.js"></script>
+<script src="/static/src/app/auth/config.route.js"></script>
 
-  <script src="/static/src/app/about/about.module.js"></script>
-  <script src="/static/src/app/about/about.router.js"></script>
-  <script src="/static/src/app/about/config.route.js"></script>
+<script src="/static/src/app/about/about.module.js"></script>
+<script src="/static/src/app/about/about.router.js"></script>
+<script src="/static/src/app/about/config.route.js"></script>
 
-  <script src="/static/src/app/contact/contact.module.js"></script>
-  <script src="/static/src/app/contact/contact.router.js"></script>
-  <script src="/static/src/app/contact/config.route.js"></script>
-  <script src="/static/src/app/contact/contact.controller.js"></script>
-  <!-- endbuild -->
-  </body>
-  <div class="se-pre-con"></div>
-  </html>
+<script src="/static/src/app/contact/contact.module.js"></script>
+<script src="/static/src/app/contact/contact.router.js"></script>
+<script src="/static/src/app/contact/config.route.js"></script>
+<script src="/static/src/app/contact/contact.controller.js"></script>
+<!-- endbuild -->
+</body>
+<div class="se-pre-con"></div>
+</html>
