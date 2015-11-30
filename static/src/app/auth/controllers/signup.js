@@ -1,5 +1,5 @@
 angular.module('app.auth')
-.controller('SignupCtrl', function($scope, $rootScope, $alert, $auth, $state, $resource) {
+.controller('SignupCtrl', function($scope, $rootScope, $alert, $auth, $state, $resource, Notification) {
     var socialUser = $resource('/api/socialuser/', null, {'query': {method: 'GET', isArray:false}});
     $scope.signup = function() {
         $auth.signup({
@@ -7,29 +7,25 @@ angular.module('app.auth')
         email: $scope.email,
         password: $scope.password
         }).catch(function(response) {
-            if (typeof response.data.message === 'object') {
-                angular.forEach(response.data.message, function(message) {
-                    $alert({
-                        content: message[0],
-                    animation: 'fadeZoomFadeDown',
-                    type: 'material',
-                    duration: 3
-                    });
-                });
-                socialUser.query().$promise.then(
-                    function success(data){
-                        $rootScope.name = data.name;
-                        $rootScope.bettingFunds = data.betting_funds;
+            if (response.status === 400) {
+                angular.forEach(response.data, function(value, key) {
+                    if (key === "username") {
+                        Notification.error("Please choose a different username.");
                     }
-                );
-            } else {
-                $alert({
-                    content: response.data.message,
-                    animation: 'fadeZoomFadeDown',
-                    type: 'material',
-                    duration: 3
+                    if (key === "email") {
+                        Notification.error("Enter a valid email address.");
+                    }
+                    if (key === "error") {
+                        Notification.error("Please choose a different email address.");
+                    }
                 });
-            }
+        }}).then(function() {
+            socialUser.query().$promise.then(
+                function success(data){
+                    $rootScope.name = data.name;
+                    $rootScope.bettingFunds = data.betting_funds;
+                }
+            );
         });
     };
     $scope.authenticate = function(provider) {
