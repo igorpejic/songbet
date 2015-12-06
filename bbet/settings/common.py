@@ -153,7 +153,7 @@ MEDIA_URL = '/media/'
 
 
 # ##### DEBUG CONFIGURATION ###############################
-DEBUG = False
+DEBUG = True
 
 
 # ##### INTERNATIONALIZATION ##############################
@@ -216,3 +216,4 @@ JWT_AUTH = {
     # wait until satellizer implements token refresh
     'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=2),
 }
+
