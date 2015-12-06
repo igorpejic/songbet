@@ -4,9 +4,9 @@
         .module('app.bet')
         .controller('singleBetController', singleBetController);
     
-    singleBetController.$inject = ['lastWeekPrepService', 'addBetService', '$filter', '$state', '$window', 'Notification'];
+    singleBetController.$inject = ['$rootScope', 'lastWeekPrepService', 'addBetService', '$filter', '$state', '$window', 'Notification', '$timeout'];
 
-    function singleBetController(lastWeekPrepService, addBetService, $filter, $state, $window, Notification) {
+    function singleBetController($rootScope, lastWeekPrepService, addBetService, $filter, $state, $window, Notification, $timeout) {
         var vm = this;
         vm.bets = [];
         vm.date = lastWeekPrepService[0].date;
@@ -70,16 +70,16 @@
             });
             addBetService.save({date: vm.date, stake: vm.stake, bet_type: 3, bets: bets}).$promise.then(
                 function success(data){
-                    $state.go($state.current, {}, {reload: true});
-                    // TODO: update totalOdds with $watch and service
-                    $window.location.href = '/app/bet';
+                    $rootScope.bettingFunds -= data.stake;
+                    Notification.success({message: "Your bet has been saved."});
+                    vm.startFade = true;
+                    $timeout(resetPendingBet, 2000);
                 },
                 function failure(data) {
                     Notification.error({message: "Insufficient funds."});
                 }
             );
         }
-
         function totalOdds() {
             var total = 0;
             angular.forEach(vm.bets, function(value, key) {
@@ -91,6 +91,21 @@
             vm.win = $filter('number')(vm.totalOdds() * vm.stake, 2);
         }
 
+        function resetPendingBet() {
+            vm.bets = [];
+            vm.totalOdds = null;
+            vm.stake = 10;
+            vm.win = 0;
+            angular.forEach(vm.lastWeekSongs, function(value, key) {
+                if (value.hasOwnProperty('one')) {
+                    delete value.one;
+                } else if (value.hasOwnProperty('two')) {
+                    delete value.two;
+                    value.removeAttr('two');
+                } else if (value.hasOwnProperty('x')) {
+                    delete value.x;
+                }
+            });
+        }
     }
- 
 }());
