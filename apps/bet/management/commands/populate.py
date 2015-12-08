@@ -46,7 +46,7 @@ class WeeklyChart(object):
         week_time = time.strptime(soup.time.text, "%B %d, %Y")
         dt = datetime.fromtimestamp((time.mktime(week_time)))
         if check_won:
-            last_week = Week.objects.get(date=dt-timedelta(days=7))
+            last_week = Week.objects.all().order_by('-date')[1]
         this_week = Week.objects.get_or_create(date=dt)[0]
 
         for position, (song_name, artist, artist_name) in enumerate(chart):
