@@ -16,7 +16,7 @@ from apps.bet.management.commands import check_if_won
 
 class WeeklyChart(object):
 
-    def __init__(self, url, checked, check_won=True):
+    def __init__(self, url, checked, check_won=False):
         self.url = url
         self.checked = checked
 
@@ -56,11 +56,11 @@ class WeeklyChart(object):
             Position.objects.get_or_create(week=this_week, song=song,
                                            position=position + 1)
 
-        if this_week != last_week and checked is False and check_won:
+        if check_won and this_week != last_week and checked is False:
             check_if_won.check_if_won(last_week, this_week)
 
 
-def populate(check_won=True):
+def populate(check_won=False):
     url = 'http://www.billboard.com/charts/hot-100'
     checked = False
     WeeklyChart(url, checked, check_won=check_won)
@@ -77,7 +77,18 @@ def populate(check_won=True):
 
 
 class Command(BaseCommand):
-    populate()
+
+    help = '''
+    Populate new week with video_id. Accepts 'check_won' as True or False.
+    Usage: python manage.py populate --check_won
+    '''
+
+    def add_arguments(self, parser):
+        parser.add_argument('--check_won', action='store_true', dest='check_won',
+                            default=False, help='Check if won for last week.')
 
     def handle(self, *args, **options):
-        pass
+        if options['check_won']:
+            populate(check_won=True)
+        else:
+            populate()
