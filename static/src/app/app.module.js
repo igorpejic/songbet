@@ -19,7 +19,7 @@
     ]).
         config(['NotificationProvider', function(NotificationProvider) {
             NotificationProvider.setOptions({
-                positionY: 'bottom'
+                 positionX: 'center'
             });
         }
     ]).

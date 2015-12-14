@@ -24,8 +24,8 @@ DATABASES = {
         'NAME': 'billboardbet',
         'USER': data['user'],
         'PASSWORD': data['password'],
-	'HOST': 'localhost',
-	'PORT': ''
+	#'HOST': 'localhost',
+	#'PORT': ''
     }
 }
 
