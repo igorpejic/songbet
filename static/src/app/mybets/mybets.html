@@ -10,12 +10,14 @@
   </h2>
     <table class="table table-hover">
       <tr>
-        <th class="col-md-4">Date</th>
-        <th class="col-md-6">Stake</th>
+        <th class="col-md-4">Submission date</th>
+        <th class="col-md-3">Betting week</th>
+        <th class="col-md-3">Stake</th>
         <th class="col-md-2">Status</th>
       </tr>
       <tr ng-repeat="mybet in vm.mybets">
         <td><a ui-sref="mybetsDetail({id: mybet.id})">{{mybet.date_time | date:'dd-MM-yyyy HH:mm'}}</a></td>
+        <td>{{mybet.week.date | date:"dd-MM-yyyy"}}</td>
         <td>{{mybet.stake | number:2}}</td>
         <td>{{mybet.has_won | betStatus}}</td>
       </tr>

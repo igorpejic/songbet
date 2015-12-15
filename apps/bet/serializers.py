@@ -103,9 +103,11 @@ class BasicWeekSerializer(serializers.ModelSerializer):
 
 class MyBetsSerializer(serializers.ModelSerializer):
 
+    week = BasicWeekSerializer()
+
     class Meta:
         model = Bet
-        fields = ('id', 'date_time', 'has_won', 'bet_type', 'stake',
+        fields = ('id', 'week', 'date_time', 'has_won', 'bet_type', 'stake',
                   'betitem_set')
 
 

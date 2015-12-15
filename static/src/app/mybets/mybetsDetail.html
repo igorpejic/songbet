@@ -1,17 +1,21 @@
 <div>
-  <h3>{{vm.mybet.date_time | date : "dd-MM-yyyy HH:mm"}}</h3>
+  <h3>Submission time: {{vm.mybet.date_time | date : "dd-MM-yyyy HH:mm"}}</h3>
+  <h3>Betting week: {{ vm.mybet.week.date | date: "dd-MM-yyyy"}}</h3>
   <h3>Stake: {{vm.mybet.stake | number:2}}</h3>
+  <h3>Total odds: {{ vm.totalOdds }}</h3>
+  <h3>Possible winnings: {{ vm.totalOdds * vm.mybet.stake | number: 2 }}</h3>
   <h3>Status: {{vm.mybet.has_won | betStatus}}</h3>
-  <h3>Bets for week coming after: <a ui-sref="weeksDetail({id: vm.mybet.week.id})">{{ vm.mybet.week.date | date: "dd-MM-yyyy"}}</a></h3>
   <table class="table">
     <thead>
       <th>Song</th>
+      <th class="text-center">Odds</th>
       <th class="text-center">Your Choice</th>
       <th class="text-center">Correct choice</th>
     </thead>
     <tr ng-repeat="betitem in vm.mybet.betitem_set">
       <td><a href="{{betitem.song.youtube_link | youtubeLink:'video' }}" target="_blank">
             <img src="{{betitem.song.youtube_link | youtubeLink:'thumbnail'}}" height="42" width="42" alt="Youtube video">&nbsp{{betitem.song.name}} - {{betitem.song.artist_name}}</a></td>
+        <td class="text-center">{{ betitem.odd }}</td>
       <td class="text-center" ng-bind-html="betitem.choice | betChoice"></td>
       <td class="text-center" ng-bind-html="betitem.correct_choice | betChoice"></td>
     </tr>

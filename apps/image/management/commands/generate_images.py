@@ -25,7 +25,6 @@ def draw_text_with_border(object, coord, text, font, multiline_text=False):
     getattr(object, method)((x, y), text, font=font, fill=(255, 255, 255, 255))
 
 
-
 def generate_images(test_mode=True):
 
     base = Image.open(join(settings.IMAGE_ASSETS, 'lower_third.png')).convert('RGBA')
@@ -81,13 +80,13 @@ def generate_images(test_mode=True):
         out = Image.alpha_composite(song_position, txt)
         assert position.change
         if position.change == '1':
-            out.paste(up, (150, 885), up)
+            out.paste(up, (165, 885), up)
         elif position.change == '2':
-            out.paste(down, (150, 885), down)
+            out.paste(down, (165, 885), down)
         elif position.change == 'N':
-            out.paste(new, (150, 885), new)
+            out.paste(new, (165, 885), new)
         elif position.change == 'X':
-            out.paste(middle, (150, 885), middle)
+            out.paste(middle, (165, 885), middle)
 
         weeks_on_n = Position.objects.filter(song=position.song).count()
         font = ImageFont.truetype(font_name, 60)
