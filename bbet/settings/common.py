@@ -33,7 +33,8 @@ VIDEOS = join(VAR_ROOT, 'videos')
 
 # look for static assets here
 STATICFILES_DIRS = [
-    join(PROJECT_ROOT, 'static'),
+    join(PROJECT_ROOT, 'static/src/spirit/'),
+    join(PROJECT_ROOT, 'static/dist/'),
 ]
 
 # look for templates here
