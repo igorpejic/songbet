@@ -10,6 +10,8 @@
     /* @ngInject */
     function appRun(routerHelper, $rootScope, $state) {
         routerHelper.configureStates(getStates());
+        //debugging
+        $rootScope.$on("$stateChangeError", console.log.bind(console));
         $rootScope.$on("$stateChangeError", function(event){
            event.preventDefault();
            $state.go('signup');

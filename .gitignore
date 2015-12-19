@@ -7,3 +7,4 @@ var/videos/*
 var/video_assets/*
 var/raw_videos/*
 var/
+npm-debug.log

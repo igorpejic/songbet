@@ -21,12 +21,16 @@ angular.module('mgcrea.ngStrap.modal', ['mgcrea.ngStrap.core', 'mgcrea.ngStrap.h
       show: true
     };
 
-    this.$get = function($window, $rootScope, $bsCompiler, $q, $templateCache, $http, $animate, $timeout, $sce, dimensions) {
+    this.$get = function($window, $rootScope, $bsCompiler, $animate, $timeout, $sce, dimensions) {
 
       var forEach = angular.forEach;
       var trim = String.prototype.trim;
       var requestAnimationFrame = $window.requestAnimationFrame || $window.setTimeout;
       var bodyElement = angular.element($window.document.body);
+
+      var backdropCount = 0;
+      var dialogBaseZindex = 1050;
+      var backdropBaseZindex = 1040;
 
       function ModalFactory(config) {
 
@@ -73,7 +77,7 @@ angular.module('mgcrea.ngStrap.modal', ['mgcrea.ngStrap.core', 'mgcrea.ngStrap.h
         // Fetch, compile then initialize modal
         var compileData, modalElement, modalScope;
         var backdropElement = angular.element('<div class="' + options.prefixClass + '-backdrop"/>');
-        backdropElement.css({position:'fixed', top:'0px', left:'0px', bottom:'0px', right:'0px', 'z-index': 1038});
+        backdropElement.css({position:'fixed', top:'0px', left:'0px', bottom:'0px', right:'0px'});
         promise.then(function(data) {
           compileData = data;
           $modal.init();
@@ -131,6 +135,15 @@ angular.module('mgcrea.ngStrap.modal', ['mgcrea.ngStrap.core', 'mgcrea.ngStrap.h
           // Fetch a cloned element linked from template (noop callback is required)
           modalElement = $modal.$element = compileData.link(modalScope, function(clonedElement, scope) {});
 
+          if(options.backdrop) {
+              // set z-index
+              modalElement.css({'z-index': dialogBaseZindex + (backdropCount * 20)});
+              backdropElement.css({'z-index': backdropBaseZindex + (backdropCount * 20)});
+
+              // increment number of backdrops
+              backdropCount++;
+          }
+
           if(scope.$emit(options.prefixEvent + '.show.before', $modal).defaultPrevented) {
             return;
           }
@@ -183,6 +196,11 @@ angular.module('mgcrea.ngStrap.modal', ['mgcrea.ngStrap.core', 'mgcrea.ngStrap.h
 
         $modal.hide = function() {
           if(!$modal.$isShown) return;
+
+          if(options.backdrop) {
+              // decrement number of modals
+              backdropCount--;
+          }
 
           if(scope.$emit(options.prefixEvent + '.hide.before', $modal).defaultPrevented) {
             return;
@@ -264,7 +282,7 @@ angular.module('mgcrea.ngStrap.modal', ['mgcrea.ngStrap.core', 'mgcrea.ngStrap.h
           }
         }
 
-        // Private methods
+        // Private helpers
 
         function hideOnBackdropClick(evt) {
           if(evt.target !== evt.currentTarget) return;
@@ -322,7 +340,7 @@ angular.module('mgcrea.ngStrap.modal', ['mgcrea.ngStrap.core', 'mgcrea.ngStrap.h
 
         // Directive options
         var options = {scope: scope, element: element, show: false};
-        angular.forEach(['template', 'templateUrl', 'controller', 'controllerAs', 'contentTemplate', 'controller', 'placement', 'backdrop', 'keyboard', 'html', 'container', 'animation', 'id', 'prefixEvent', 'prefixClass'], function(key) {
+        angular.forEach(['template', 'templateUrl', 'controller', 'controllerAs', 'contentTemplate', 'placement', 'backdrop', 'keyboard', 'html', 'container', 'animation', 'backdropAnimation', 'id', 'prefixEvent', 'prefixClass'], function(key) {
           if(angular.isDefined(attr[key])) options[key] = attr[key];
         });
 

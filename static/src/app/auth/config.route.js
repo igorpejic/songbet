@@ -35,7 +35,7 @@
                 state: 'logout',
                 config: {
                     url: '/logout',
-                    template:null,
+                    templateUrl: '/static/src/app/auth/views/logout.html',
                     controller: 'LogoutCtrl',
                 }
             },

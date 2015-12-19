@@ -1,6 +1,6 @@
 /**
  * angular-strap
- * @version v2.3.1 - 2015-07-19
+ * @version v2.3.6 - 2015-11-14
  * @link http://mgcrea.github.io/angular-strap
  * @author Olivier Louvignes <olivier@mg-crea.com> (https://github.com/mgcrea)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -155,7 +155,7 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
       angular.forEach([ 'html', 'container', 'trimValue' ], function(key) {
         if (angular.isDefined(attr[key]) && falseValueRegExp.test(attr[key])) options[key] = false;
       });
-      element.attr('autocomplete', 'false');
+      if (!element.attr('autocomplete')) element.attr('autocomplete', 'off');
       var filter = options.filter || defaults.filter;
       var limit = options.limit || defaults.limit;
       var comparator = options.comparator || defaults.comparator;
@@ -182,10 +182,7 @@ angular.module('mgcrea.ngStrap.typeahead', [ 'mgcrea.ngStrap.tooltip', 'mgcrea.n
             return;
           }
           if (values.length > limit) values = values.slice(0, limit);
-          var isVisible = typeahead.$isVisible();
-          isVisible && typeahead.update(values);
-          if (values.length === 1 && values[0].value === newValue) return;
-          !isVisible && typeahead.update(values);
+          typeahead.update(values);
           controller.$render();
         });
       });

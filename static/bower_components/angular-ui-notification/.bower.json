@@ -41,6 +41,5 @@
   },
   "_source": "git://github.com/alexcrack/angular-ui-notification.git",
   "_target": "~0.0.14",
-  "_originalSource": "angular-ui-notification",
-  "_direct": true
+  "_originalSource": "angular-ui-notification"
 }

@@ -4,9 +4,14 @@ angular.module('app.auth')
     $scope.signup = function() {
         $auth.signup({
             username: $scope.displayName,
-        email: $scope.email,
-        password: $scope.password
-        }).catch(function(response) {
+            email: $scope.email,
+            password: $scope.password
+        }).then(function(response) {
+            $auth.setToken(response);
+            $state.go('singleBet');
+            Notification('Sign up successful. Welcome to the site!');
+        })
+        .catch(function(response) {
             if (response.status === 400) {
                 angular.forEach(response.data, function(value, key) {
                     if (key === "username") {
@@ -19,24 +24,11 @@ angular.module('app.auth')
                         Notification.error("Please choose a different email address.");
                     }
                 });
-        }}).then(function() {
-            socialUser.query().$promise.then(
-                function success(data){
-                    $rootScope.name = data.name;
-                    $rootScope.bettingFunds = data.betting_funds;
-                }
-            );
-        });
+        }});
     };
     $scope.authenticate = function(provider) {
         $auth.authenticate(provider)
             .then(function() {
-                $alert({
-                    content: 'You have successfully logged in',
-                    animation: 'fadeZoomFadeDown',
-                    type: 'material',
-                    duration: 3
-                });
             socialUser.query().$promise.then(
                 function success(data){
                     $rootScope.name = data.name;

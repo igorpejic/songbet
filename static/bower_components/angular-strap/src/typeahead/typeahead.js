@@ -217,7 +217,7 @@ angular.module('mgcrea.ngStrap.typeahead', ['mgcrea.ngStrap.tooltip', 'mgcrea.ng
         });
 
         // Disable browser autocompletion
-        element.attr('autocomplete', 'false');
+        if (!element.attr('autocomplete')) element.attr('autocomplete', 'off');
 
         // Build proper bsOptions
         var filter = options.filter || defaults.filter;
@@ -259,11 +259,7 @@ angular.module('mgcrea.ngStrap.typeahead', ['mgcrea.ngStrap.tooltip', 'mgcrea.ng
                 return;
               }
               if (values.length > limit) values = values.slice(0, limit);
-              var isVisible = typeahead.$isVisible();
-              isVisible && typeahead.update(values);
-              // Do not re-queue an update if a correct value has been selected
-              if (values.length === 1 && values[0].value === newValue) return;
-              !isVisible && typeahead.update(values);
+              typeahead.update(values);
               // Queue a new rendering that will leverage collection loading
               controller.$render();
             });
