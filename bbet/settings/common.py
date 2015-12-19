@@ -32,10 +32,11 @@ IMAGES = join(VAR_ROOT, 'images')
 VIDEOS = join(VAR_ROOT, 'videos')
 
 # look for static assets here
+# overriden in production
 STATICFILES_DIRS = [
-    join(PROJECT_ROOT, 'static/src/spirit/'),
-    join(PROJECT_ROOT, 'static/dist/'),
+    join(PROJECT_ROOT, 'static'),
 ]
+
 
 # look for templates here
 # This is an internal setting, used in the TEMPLATES directive

@@ -1,6 +1,11 @@
 # for now fetch the development settings only
 from dev import *
 
+STATICFILES_DIRS = [
+    join(PROJECT_ROOT, 'static/src/spirit/'),
+    join(PROJECT_ROOT, 'static/dist/'),
+]
+
 ALLOWED_HOSTS = ['songbet.me', 'localhost']
 DEBUG = False
 TEMPLATE_DEBUG = False

@@ -106,7 +106,7 @@ var css_source = [
 gulp.task('css-fef', function(){
     return gulp.src(css_source)
         .pipe(gp_expect(css_source))
-        .pipe(minifyCSS({processImport: false}))
+        .pipe(minifyCSS())
         .pipe(gp_concat('style.min.css'))
         .pipe(gulp.dest('dist'));
 });
