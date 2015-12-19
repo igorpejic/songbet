@@ -59,7 +59,6 @@ var source = [
     'src/app/mybets/mybetsDetail.controller.js',
     'src/app/mybets/betStatus.filter.js',
 
-
     'src/app/auth/auth.router.js',
     'src/app/auth/auth.module.js',
     'src/app/auth/directives/passwordStrength.js',
@@ -100,7 +99,8 @@ var css_source = [
     'bower_components/font-awesome/css/font-awesome.css',
     'bower_components/angular-ui-notification/dist/angular-ui-notification.min.css',
     'bower_components/font-awesome/css/font-awesome.min.css',
-    'bower_components/bootswatch/cosmo/bootstrap.min.css'
+    'bower_components/bootswatch/cosmo/bootstrap.min.css',
+    'src/content/style.css',
 ];
 
 gulp.task('css-fef', function(){
