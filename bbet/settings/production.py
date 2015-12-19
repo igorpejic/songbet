@@ -4,10 +4,11 @@ from dev import *
 STATICFILES_DIRS = [
     join(PROJECT_ROOT, 'static/src/spirit/'),
     join(PROJECT_ROOT, 'static/dist/'),
+    join(PROJECT_ROOT, 'static/bower_components'),
 ]
 
 ALLOWED_HOSTS = ['songbet.me', 'localhost']
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = False
 ALLOWED_HOSTS = ['songbet.me']
 
