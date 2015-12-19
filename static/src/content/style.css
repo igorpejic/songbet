@@ -209,10 +209,20 @@ html, body {height: 100%;}
 .content {overflow:auto;
 	padding-bottom: 150px;}  /* must be same height as the footer */
 
-.footer {position: relative;
+.footer {
+    position: relative;
 	margin-top: -150px; /* negative value of footer height */
 	height: 150px;
-	clear:both;} 
+	clear:both;
+} 
+
+@media only screen and (max-device-width:500)
+.footer {
+    position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 225px;
+	clear:both;
+} 
 
 /*Opera Fix*/
 body:before {
