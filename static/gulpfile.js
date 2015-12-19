@@ -6,6 +6,8 @@ var gulp = require('gulp'),
     gp_expect = require('gulp-expect-file');
     ngAnnotate = require('gulp-ng-annotate');
 
+var minifyCSS = require('gulp-minify-css');
+
 
     /*
     'src/app/weeks/weeks.router.js',
@@ -78,6 +80,7 @@ var source = [
 ];
 
 
+
 gulp.task('js-fef', function(){
     return gulp.src(source)
         .pipe(gp_expect(source))
@@ -91,4 +94,21 @@ gulp.task('js-fef', function(){
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['js-fef'], function(){});
+var css_source = [
+    'bower_components/bootstrap-social/bootstrap-social.css',
+    'bower_components/bootstrap/dist/css/bootstrap.min.css',
+    'bower_components/font-awesome/css/font-awesome.css',
+    'bower_components/angular-ui-notification/dist/angular-ui-notification.min.css',
+    'bower_components/font-awesome/css/font-awesome.min.css',
+    'bower_components/bootswatch/cosmo/bootstrap.min.css'
+];
+
+gulp.task('css-fef', function(){
+    return gulp.src(css_source)
+        .pipe(gp_expect(css_source))
+        .pipe(minifyCSS({processImport: false}))
+        .pipe(gp_concat('style.min.css'))
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('default', ['js-fef', 'css-fef'], function(){});
