@@ -43,15 +43,16 @@
                 }
                 return cookieValue;
             };
-            $authProvider.loginUrl = '/api-token-auth/';
-            $authProvider.signupUrl = '/api/register/';
-            $authProvider.loginRedirect = '/bet';
-            $authProvider.logoutRedirect = '/';
             $locationProvider.html5Mode(true);
             $locationProvider.hashPrefix('!');
+            $authProvider.loginUrl = '/api-token-auth/';
+            $authProvider.signupUrl = '/api/register/';
+            $authProvider.loginRedirect = '/app/bet';
+            $authProvider.logoutRedirect = '/';
             $authProvider.google({
                 clientId:'609163425136-1i7b7jlr4j4hlqtnb1gk3al2kagavcjm.apps.googleusercontent.com',
                 url: 'api/login/google-oauth2/',
+                redirectUri: window.location.origin,
                 optionalUrlParams: ['display', 'state'],
                 state: function() {
                     return getCookie('csrftoken');

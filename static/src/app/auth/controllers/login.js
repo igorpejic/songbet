@@ -27,6 +27,8 @@ angular.module('app.auth')
                     function success(data){
                         $rootScope.name = data.name;
                         $rootScope.bettingFunds = data.betting_funds;
+                        $state.go('singleBet');
+                        Notification('Welcome back ' + data.name  + '!');
                     }
                     );
             });

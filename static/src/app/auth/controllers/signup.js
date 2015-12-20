@@ -9,7 +9,7 @@ angular.module('app.auth')
         }).then(function(response) {
             $auth.setToken(response);
             $state.go('singleBet');
-            Notification('Sign up successful. Welcome to the site!');
+            Notification('Sign up successful. Welcome to songbet!');
         })
         .catch(function(response) {
             if (response.status === 400) {
@@ -33,6 +33,8 @@ angular.module('app.auth')
                 function success(data){
                     $rootScope.name = data.name;
                     $rootScope.bettingFunds = data.betting_funds;
+                    $state.go('singleBet');
+                    Notification('Sign up successful. Welcome to songbet!');
                 }
             );
         });
