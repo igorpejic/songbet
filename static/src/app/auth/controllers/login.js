@@ -1,5 +1,6 @@
 angular.module('app.auth')
-  .controller('LoginCtrl', function($scope, $rootScope, $alert, $auth, $state, $resource, Notification) {
+  .controller('LoginCtrl',
+          ['$scope', '$rootScope', '$auth', '$state', '$resource', 'Notification', function($scope, $rootScope, $auth, $state, $resource, Notification) {
     var socialUser = $resource('/api/socialuser/', null, {'query': {method: 'GET', isArray:false}});
     $scope.login = function() {
       $auth.login({ username: $scope.email, password: $scope.password })
@@ -33,4 +34,4 @@ angular.module('app.auth')
                     );
             });
         };
-  });
+  }]);

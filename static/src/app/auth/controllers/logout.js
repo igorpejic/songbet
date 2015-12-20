@@ -1,5 +1,5 @@
 angular.module('app.auth')
-  .controller('LogoutCtrl', function($auth, $alert, $state) {
+  .controller('LogoutCtrl', ['$auth', '$alert', '$state', function($auth, $alert, $state) {
     if (!$auth.isAuthenticated()) {
         return;
     }
@@ -7,4 +7,4 @@ angular.module('app.auth')
       .then(function() {
         
       });
-  });
+  }]);

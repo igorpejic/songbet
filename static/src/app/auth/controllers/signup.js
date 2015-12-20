@@ -1,5 +1,6 @@
 angular.module('app.auth')
-.controller('SignupCtrl', function($scope, $rootScope, $alert, $auth, $state, $resource, Notification) {
+.controller('SignupCtrl',
+        ['$scope', '$rootScope', '$alert', '$auth', '$state', '$resource', 'Notification', function($scope, $rootScope, $alert, $auth, $state, $resource, Notification) {
     var socialUser = $resource('/api/socialuser/', null, {'query': {method: 'GET', isArray:false}});
     $scope.signup = function() {
         $auth.signup({
@@ -39,4 +40,4 @@ angular.module('app.auth')
             );
         });
     };
-});
+}]);
