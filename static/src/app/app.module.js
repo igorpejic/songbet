@@ -52,7 +52,7 @@
             $authProvider.google({
                 clientId:'609163425136-1i7b7jlr4j4hlqtnb1gk3al2kagavcjm.apps.googleusercontent.com',
                 url: 'api/login/google-oauth2/',
-                redirectUri: window.location.origin,
+                redirectUri: window.location.origin + '/app/',
                 optionalUrlParams: ['display', 'state'],
                 state: function() {
                     return getCookie('csrftoken');

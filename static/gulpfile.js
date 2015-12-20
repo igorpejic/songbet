@@ -84,12 +84,8 @@ gulp.task('js-fef', function(){
     return gulp.src(source)
         .pipe(gp_expect(source))
         .pipe(ngAnnotate())
-        .pipe(gp_sourcemaps.init())
-        .pipe(gp_concat('concat.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(gp_rename('uglify.js'))
+        .pipe(gp_concat('uglify.js'))
         .pipe(gp_uglify())
-        .pipe(gp_sourcemaps.write('./'))
         .pipe(gulp.dest('dist'));
 });
 
