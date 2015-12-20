@@ -214,8 +214,7 @@ html, body {height: 100%;}
 	margin-top: -150px; /* negative value of footer height */
 	height: 150px;
 	clear:both;
-} 
-
+}
 
 @media (max-width: 600px) {
 .footer {
@@ -223,7 +222,15 @@ html, body {height: 100%;}
 	margin-top: -150px; /* negative value of footer height */
 	height: 225px;
 	clear:both;
-} 
+}
+
+@media (max-width: 270px) {
+.footer {
+    position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 280px;
+	clear:both;
+}
 
 /*Opera Fix*/
 body:before {

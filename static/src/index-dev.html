@@ -12,11 +12,12 @@
 <meta name="description" content="Song Bet is the unique place to bet on song popularity and discuss with friends.">
 
 <link rel="shortcut icon" href="/static/src/content/favicon.ico" >
-<link rel="stylesheet" type="text/css" href="/static/style.min.css"/>
 <!-- has to be for now, breaks gulp -->
-<link rel="stylesheet" type="text/css" href="/static/bower_components/font-awesome/css/font-awesome.min.css"/>
-
 <!--
+<link rel="stylesheet" type="text/css" href="/static/style.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/font-awesome/css/font-awesome.min.css"/>
+-->
+
 <link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap-social/bootstrap-social.min.css"/>
 <link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="/static/bower_components/font-awesome/css/font-awesome.min.css"/>
@@ -24,7 +25,7 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css"/>
 
 <link rel="stylesheet" type="text/css" href="/static/src/content/style.css"/>
--->
+
 
 <!--[if !IE 7]>
   <style type="text/css">
@@ -50,9 +51,9 @@
         </button>
       </div>
       <ng-include src="'/static/src/app/auth/views/navbar.html'" ng-controller="NavbarCtrl"></ng-include>
+
     </div><!--/.container-fluid -->
   </nav>
-
 
   <div class="container content">
     <ui-view/>
@@ -92,9 +93,11 @@
     <script src="/static/bower_components/json3/lib/json3.min.js"></script>
 <![endif]-->
 
-<script async src="/static/uglify.js"></script>
-
 <!--
+<script async src="/static/uglify.js"></script>
+-->
+
+<script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/static/bower_components/angular/angular.min.js"></script>
 <script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/static/bower_components/angular-resource/angular-resource.js"></script>
@@ -156,7 +159,6 @@
 <script src="/static/src/app/contact/contact.router.js"></script>
 <script src="/static/src/app/contact/config.route.js"></script>
 <script src="/static/src/app/contact/contact.controller.js"></script>
--->
 
 <!--
 <script src="/static/src/app/weeks/weeks.router.js"></script>
