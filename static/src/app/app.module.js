@@ -52,7 +52,7 @@
             $authProvider.google({
                 clientId:'609163425136-1i7b7jlr4j4hlqtnb1gk3al2kagavcjm.apps.googleusercontent.com',
                 url: 'api/login/google-oauth2/',
-                redirectUri: window.location.origin + '/app/',
+                redirectUri: window.location.origin + '/app/' || (window.location.protocol + '//' + window.location.host + '/app/'),
                 optionalUrlParams: ['display', 'state'],
                 state: function() {
                     return getCookie('csrftoken');
@@ -61,6 +61,7 @@
             $authProvider.facebook({
                 clientId: '1629513813961116',
                 url: 'api/login/facebook/',
+                redirectUri: window.location.origin + '/app/' || (window.location.protocol + '//' + window.location.host + '/app/'),
                 scope: ['email'],
                 state: function() {
                     return getCookie('csrftoken');
