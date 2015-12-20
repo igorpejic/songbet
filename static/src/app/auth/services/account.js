@@ -1,5 +1,5 @@
 angular.module('app.auth')
-  .factory('Account', function($http) {
+  .factory('Account', ['$http', function($http) {
     return {
       getProfile: function() {
         return $http.get('/api/me');
@@ -8,4 +8,4 @@ angular.module('app.auth')
         return $http.put('/api/me', profileData);
       }
     };
-  });
+  }]);

@@ -30,6 +30,7 @@
         ];
     }
 
+    /* @ngInject */
     function contactService(dataservice) {
         return dataservice.contactService();
     }

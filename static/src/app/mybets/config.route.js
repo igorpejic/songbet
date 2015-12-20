@@ -41,9 +41,11 @@
             },
         ];
     }
+    /* @ngInject */
     function mybetsService(dataservice) {
         return dataservice.mybetsService().query().$promise;
     }
+    /* @ngInject */
     function mybetsDetailService(dataservice, $stateParams) {
         return dataservice.mybetsService().get({id: $stateParams.id}).$promise;
     }

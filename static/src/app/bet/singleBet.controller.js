@@ -4,9 +4,9 @@
         .module('app.bet')
         .controller('singleBetController', singleBetController);
     
-    singleBetController.$inject = ['$rootScope', 'lastWeekPrepService', 'addBetService', '$filter', '$state', '$window', 'Notification', '$timeout'];
+    singleBetController.$inject = ['$rootScope', 'lastWeekPrepService', 'addBetService', '$filter', '$state', 'Notification', '$timeout'];
 
-    function singleBetController($rootScope, lastWeekPrepService, addBetService, $filter, $state, $window, Notification, $timeout) {
+    function singleBetController($rootScope, lastWeekPrepService, addBetService, $filter, $state, Notification, $timeout) {
         var vm = this;
         vm.bets = [];
         vm.date = lastWeekPrepService[0].date;

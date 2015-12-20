@@ -27,7 +27,7 @@
             $resourceProvider.defaults.stripTrailingSlashes = false;
         }
     ]).
-        config(function($authProvider, $locationProvider) {
+        config(['$authProvider', '$locationProvider', function($authProvider, $locationProvider) {
             var getCookie = function (name) {
                 var cookieValue = null;
                 if (document.cookie && document.cookie != '') {
@@ -52,7 +52,7 @@
             $authProvider.google({
                 clientId:'609163425136-1i7b7jlr4j4hlqtnb1gk3al2kagavcjm.apps.googleusercontent.com',
                 url: 'api/login/google-oauth2/',
-                redirectUri: window.location.origin + '/app/' || (window.location.protocol + '//' + window.location.host + '/app/'),
+                redirectUri: window.location.origin + '/app/bet' || (window.location.protocol + '//' + window.location.host + '/app/bet'),
                 optionalUrlParams: ['display', 'state'],
                 state: function() {
                     return getCookie('csrftoken');
@@ -67,5 +67,5 @@
                     return getCookie('csrftoken');
                 }
             });
-    });
+    }]);
 })();

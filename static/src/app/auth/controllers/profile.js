@@ -1,5 +1,5 @@
 angular.module('app.auth')
-  .controller('ProfileCtrl', function($scope, $auth, $alert, Account) {
+  .controller('ProfileCtrl', ['$scope', '$auth', '$alert', 'Account', function($scope, $auth, $alert, Account) {
 
     /**
      * Get user's profile information.
@@ -91,4 +91,4 @@ angular.module('app.auth')
 
     $scope.getProfile();
 
-  });
+  }]);

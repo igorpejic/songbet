@@ -1,6 +1,6 @@
 angular.module('app.auth')
 .controller('SignupCtrl',
-        ['$scope', '$rootScope', '$alert', '$auth', '$state', '$resource', 'Notification', function($scope, $rootScope, $alert, $auth, $state, $resource, Notification) {
+        ['$scope', '$rootScope', '$auth', '$state', '$resource', 'Notification', function($scope, $rootScope, $auth, $state, $resource, Notification) {
     var socialUser = $resource('/api/socialuser/', null, {'query': {method: 'GET', isArray:false}});
     $scope.signup = function() {
         $auth.signup({
@@ -9,8 +9,8 @@ angular.module('app.auth')
             password: $scope.password
         }).then(function(response) {
             $auth.setToken(response);
-            $state.go('singleBet');
             Notification('Sign up successful. Welcome to songbet!');
+            $state.go('singleBet');
         })
         .catch(function(response) {
             if (response.status === 400) {
@@ -34,8 +34,8 @@ angular.module('app.auth')
                 function success(data){
                     $rootScope.name = data.name;
                     $rootScope.bettingFunds = data.betting_funds;
-                    $state.go('singleBet');
                     Notification('Sign up successful. Welcome to songbet!');
+                    $state.go('singleBet');
                 }
             );
         });

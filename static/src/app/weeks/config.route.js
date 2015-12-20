@@ -43,15 +43,19 @@
             },
         ];
     }
+    /* @ngInject */
     function weeksService(dataservice) {
         return dataservice.weeksService().query().$promise;
     }
+    /* @ngInject */
     function weeksDetailService(dataservice, $stateParams) {
         return dataservice.weeksService().get({id: $stateParams.id}).$promise;
     }
+    /* @ngInject */
     function commentsResource(dataservice) {
         return dataservice.commentsService();
     }
+    /* @ngInject */
     function weekTopService(dataservice) {
           return dataservice.weekTopService().query().$promise;
     }

@@ -36,9 +36,11 @@
         ];
     }
 
+    /* @ngInject */
     function lastWeekPrepService(dataservice) {
         return dataservice.lastWeekService().query().$promise;
     }
+    /* @ngInject */
     function addBetService(dataservice) {
         return dataservice.addBetService();
     }

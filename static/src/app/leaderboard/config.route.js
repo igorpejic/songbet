@@ -29,6 +29,8 @@
             },
         ];
     }
+
+    /* @ngInject */
     function leaderboardService(dataservice) {
         return dataservice.leaderboardService().get().$promise;
     }
