@@ -47563,15 +47563,16 @@ angular.module("ui-notification",[]),angular.module("ui-notification").provider(
                 }
                 return cookieValue;
             };
-            $authProvider.loginUrl = '/api-token-auth/';
-            $authProvider.signupUrl = '/api/register/';
-            $authProvider.loginRedirect = '/bet';
-            $authProvider.logoutRedirect = '/';
             $locationProvider.html5Mode(true);
             $locationProvider.hashPrefix('!');
+            $authProvider.loginUrl = '/api-token-auth/';
+            $authProvider.signupUrl = '/api/register/';
+            $authProvider.loginRedirect = '/app/bet';
+            $authProvider.logoutRedirect = '/';
             $authProvider.google({
                 clientId:'609163425136-1i7b7jlr4j4hlqtnb1gk3al2kagavcjm.apps.googleusercontent.com',
                 url: 'api/login/google-oauth2/',
+                redirectUri: window.location.origin,
                 optionalUrlParams: ['display', 'state'],
                 state: function() {
                     return getCookie('csrftoken');
@@ -48295,6 +48296,8 @@ angular.module('app.auth')
                     function success(data){
                         $rootScope.name = data.name;
                         $rootScope.bettingFunds = data.betting_funds;
+                        $state.go('singleBet');
+                        Notification('Welcome back ' + data.name  + '!');
                     }
                     );
             });
@@ -48312,7 +48315,7 @@ angular.module('app.auth')
         }).then(function(response) {
             $auth.setToken(response);
             $state.go('singleBet');
-            Notification('Sign up successful. Welcome to the site!');
+            Notification('Sign up successful. Welcome to songbet!');
         })
         .catch(function(response) {
             if (response.status === 400) {
@@ -48336,6 +48339,8 @@ angular.module('app.auth')
                 function success(data){
                     $rootScope.name = data.name;
                     $rootScope.bettingFunds = data.betting_funds;
+                    $state.go('singleBet');
+                    Notification('Sign up successful. Welcome to songbet!');
                 }
             );
         });
