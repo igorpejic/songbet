@@ -8,7 +8,7 @@ STATICFILES_DIRS = [
 ]
 
 ALLOWED_HOSTS = ['songbet.me', 'localhost']
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = False
 ALLOWED_HOSTS = ['songbet.me']
 
