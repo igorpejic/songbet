@@ -9,6 +9,12 @@ angular.module('app.auth')
             password: $scope.password
         }).then(function(response) {
             $auth.setToken(response);
+            socialUser.query().$promise.then(
+                function success(data){
+                    $rootScope.name = data.name;
+                    $rootScope.bettingFunds = data.betting_funds;
+                }
+            );
             Notification('Sign up successful. Welcome to songbet!');
             $state.go('singleBet');
         })
