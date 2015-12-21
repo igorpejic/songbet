@@ -1,5 +1,6 @@
 import requests
 import json
+import random
 
 from django.contrib.auth.models import User
 from django.conf import settings
@@ -272,7 +273,7 @@ class SocialUserView(GenericAPIView):
 class AbsoluteLeaderboardView(GenericAPIView):
 
     def get(self, request):
-        betters = Better.objects.all().order_by('-points')[:100]
+        betters = Better.objects.all().order_by('-points')[:10]
         serialized_betters = []
         for better in betters:
             serialized_better = {}
@@ -335,3 +336,21 @@ class ContactView(CreateAPIView):
             return Response(status=status.HTTP_201_CREATED)
         else:
             return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class GuestLoginView(APIView):
+
+    permission_classes = (AllowAny,)
+
+    def post(self, request):
+        from lazysignup.models import LazyUser
+        user, username = LazyUser.objects.create_lazy_user()
+        user.first_name = 'Guest' + str(random.randint(1, 200))
+        user.save()
+        betting_funds = random.randint(10, 60)
+        Better.objects.create(user=user, points=betting_funds)
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+        return Response({'token': token, 'name': user.first_name,
+                         'betting_funds': betting_funds },
+                        status=status.HTTP_200_OK)

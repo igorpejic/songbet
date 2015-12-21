@@ -9,7 +9,8 @@ from api import(
     MyBetsViewSet,
     CommentViewSet,
     WeekTopSet,
-    ContactView
+    ContactView,
+    GuestLoginView
 )
 from rest_framework.routers import DefaultRouter
 from rest_framework_nested import routers
@@ -43,5 +44,6 @@ urlpatterns = [
     url(r'socialuser/$', SocialUserView.as_view()),
     url(r'leaderboard/$', AbsoluteLeaderboardView.as_view(), name='leaderboard-absolute'),
     url(r'contact/$', ContactView.as_view(), name='contact'),
+    url(r'guest-login/$', GuestLoginView.as_view(), name='guest_login'),
 ]
 urlpatterns += router.urls

@@ -34,3 +34,4 @@ uritemplate==0.6
 drf-nested-routers==0.10.0
 django-spirit
 django-extensions
+django-lazysignup==1.0.2

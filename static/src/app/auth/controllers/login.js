@@ -34,4 +34,18 @@ angular.module('app.auth')
                     );
             });
         };
+
+    var guestUser = $resource('/api/guest-login/', null, {'query': {method: 'POST', isArray:false}});
+    $scope.guestLogin = function() {
+        guestUser.save().$promise.then(
+            function success(response) {
+                console.log(response);
+                $auth.setToken(response.token);
+                $rootScope.name = response.name;
+                $rootScope.bettingFunds = response.betting_funds;
+                Notification('Welcome! Explore using your guest account.');
+                $state.go('singleBet');
+            }
+        );
+    };
   }]);

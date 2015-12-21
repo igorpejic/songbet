@@ -67,6 +67,7 @@ DEFAULT_APPS = [
     'apps.video',
     'django_nose',
     'spirit',
+    'lazysignup'
 ]
 
 # Middlewares
@@ -84,6 +85,7 @@ COMMON_MIDDLEWARE_CLASSES = [
 # Authentication
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
+    'lazysignup.backends.LazySignupBackend',
 )
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '609163425136-1i7b7jlr4j4hlqtnb1gk3al2kagavcjm.apps.googleusercontent.com'  # noqa
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
