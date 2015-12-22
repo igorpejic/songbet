@@ -20,9 +20,12 @@ def check_if_won(last_week, this_week):
         for betItem in bet.betitem_set.all():
             position_item_this_week = get_song_position(betItem.song, position_set_this_week)
             position_item_last_week = get_song_position(betItem.song, position_set_last_week)
+	    if not position_item_this_week:
+		correct_choice = '2'
+	    else:
+		    correct_choice = check_single_song(position_item_last_week.position,
+				    position_item_this_week.position)
             odds_total += betItem.odd
-            correct_choice = check_single_song(position_item_last_week.position,
-                                               position_item_this_week.position)
             if betItem.choice != correct_choice:
                 logger.info("not a god bet {} {} {}".format(bet.date_time,
                                                             betItem.song, betItem.choice))
