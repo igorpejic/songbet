@@ -33,12 +33,14 @@ class WeeklyChart(object):
         for node in soup.select(".row-title > h3"):
             artist = ''.join(node.findAll(text=True)).strip()
             artist_names.append(artist)
+            '''
             if re.findall('(.*)Featuring', artist):
                 artist = re.findall('(.*)Featuring', artist)[0]
             if re.findall('(.*)With', artist):
                 artist = re.findall('(.*)With', artist)[0]
             artist = artist.split('&')[0]
             artist = artist.rstrip()
+            '''
             artists.append(artist)
 
         chart = zip(song_name, artists, artist_names)

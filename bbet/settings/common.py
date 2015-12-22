@@ -25,11 +25,11 @@ MEDIA_ROOT = join(PROJECT_ROOT, 'run', 'media')
 
 VAR_ROOT = join(PROJECT_ROOT, 'var')
 IMAGE_ASSETS = join(VAR_ROOT, 'image_assets')
-VIDEO_ASSETS = join(VAR_ROOT, 'video_assets')
-RAW_VIDEOS = join(VAR_ROOT, 'raw_videos')
+VIDEO_ASSETS = '/media/igor/6C0A08790A084296/songbet_biz/video_assets'
+RAW_VIDEOS = '/media/igor/6C0A08790A084296/songbet_biz/raw_videos'
 
 IMAGES = join(VAR_ROOT, 'images')
-VIDEOS = join(VAR_ROOT, 'videos')
+VIDEOS = '/media/igor/6C0A08790A084296/songbet_biz'
 
 # look for static assets here
 # overriden in production
