@@ -17,7 +17,7 @@ def generate_video(test=True):
     for i, position in enumerate(Week.objects.all()[0].position_set.all()):
         if i == 1 and test:
             break
-        if i == 40:
+        if i == 50:
             break
 
         video = VideoFileClip(join(settings.VIDEO_ASSETS,

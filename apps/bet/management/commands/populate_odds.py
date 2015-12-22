@@ -12,9 +12,9 @@ def populate_odds():
     random.seed()
     if not hasattr(Position.objects.filter(week=week)[0].position, 'odd_1'):
         for position in Position.objects.filter(week=week):
-            position.odd_1 = int((random.uniform(1, 3) * 100) + 0.5) / 100.0
-            position.odd_2 = int((random.uniform(1, 3) * 100) + 0.5) / 100.0
-            position.odd_x = int((random.uniform(1, 3) * 100) + 0.5) / 100.0
+            position.odd_1 = int((random.uniform(1, 3) * 100) + 0.7) / 100.0
+            position.odd_2 = int((random.uniform(1, 3) * 100) + 0.7) / 100.0
+            position.odd_x = int((random.uniform(1, 3) * 100) + 0.7) / 100.0
             position.save()
 
 
