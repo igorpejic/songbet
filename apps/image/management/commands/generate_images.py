@@ -88,7 +88,7 @@ def generate_images(test_mode=True):
         elif position.change == 'X':
             out.paste(middle, (165, 885), middle)
 
-        weeks_on_n = Position.objects.filter(song=position.song).count()
+        weeks_on_n = Position.objects.filter(song=position.song).order_by('week_id').distinct('week').count()
         font = ImageFont.truetype(font_name, 60)
         draw_text_with_border(w, (1480, 70), "Weeks on - {}".format(weeks_on_n), font)
         out = Image.alpha_composite(out, weeks_on)
