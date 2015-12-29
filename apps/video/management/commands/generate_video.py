@@ -35,7 +35,7 @@ def generate_video(test=True):
         video_list.append(final)
 
     FINAL = concatenate_videoclips(list(reversed(video_list)))
-    FINAL.write_videofile(join(settings.VIDEOS, "final.mp4"), fps=24, codec='libx264')
+    FINAL.write_videofile(join(settings.VIDEOS, "billboard_top_50_this_week.mp4"), fps=24, codec='libx264')
 
 
 class Command(BaseCommand):
