@@ -25,7 +25,8 @@ def sync_change(week, previous_week):
         if not last_week_position:
             position.change = 'N'
         else:
-            position.change = check_single_song(last_week_position.position, position.position)
+            position.change, position.n_change = check_single_song(last_week_position.position,
+                                                                   position.position)
         position.save()
 
 
@@ -34,11 +35,11 @@ def check_single_song(song_position_last_week, song_position_this_week):
     and this week songs position
     '''
     if song_position_last_week > song_position_this_week:
-        return '1'
+        return '1', song_position_last_week - song_position_this_week
     elif song_position_last_week == song_position_this_week:
-        return 'X'
+        return 'X', song_position_last_week - song_position_this_week
     else:
-        return '2'
+        return '2', song_position_last_week - song_position_this_week
 
 
 def get_song_position(betItem_song, position_set):

@@ -114,6 +114,7 @@ class Position(models.Model):
     odd_x = models.FloatField(blank=True, null=True)
     odd_2 = models.FloatField(blank=True, null=True)
     change = models.CharField(max_length=4, choices=CHANGE_CHOICES, blank=True, null=True)
+    n_change = models.IntegerField(blank=True, null=True)
 
     class Meta:
         ordering = ['position']
