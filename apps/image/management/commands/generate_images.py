@@ -26,22 +26,37 @@ def draw_text_with_border(object, coord, text, font, multiline_text=False):
 
 
 def draw_position(position):
-    size = 180
-    text = str(position)
-    rectangle = Image.new('RGBA', (size, size), (0, 0, 0, 0))
-
-    draw = ImageDraw.Draw(rectangle)
-    draw.rectangle([0, 0, size, size], fill="#000000")
+    # factor is used to prevent alias, increase image and then resize
+    factor = 8
+    size = 180 * factor
+    text = str(position.position)
+    if position.performance_gain:
+        rectangle = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(rectangle)
+        draw.rectangle([0, 0, size, size], fill="#000000")
+        draw.ellipse([2, 2, 178 * factor, 178 * factor],
+                     outline="#ffffff", fill="#ffffff")
+        draw.ellipse([7*factor, 7*factor, 171 * factor, 171 * factor],
+                     outline="#ffffff", fill="#000000")
+        font_fill = "#ffffff"
+    else:
+        rectangle = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(rectangle)
+        draw.rectangle([0, 0, size, size], fill="#ffffff")
+        font_fill = "#000000"
 
     font_name = join(settings.IMAGE_ASSETS, 'Bauhaus_.ttf')
-    font_size = 140
+    font_size = 132 * factor
+    if position.position >= 100:
+        font_size = 98 * factor
     font = ImageFont.truetype(font_name, font_size)
 
     w, h = draw.textsize(str(text), font=font)
 
-    draw.text(((size - w) / 2, (size-h) / 2), text, font=font)
+    draw.text(((size - w) / 2, (size-h) / 2), text, font=font, fill=font_fill)
     del draw
-    rectangle.save(join(settings.IMAGES, "pos{}.png".format(position)))
+    rectangle = rectangle.resize((size/factor, size/factor), Image.ANTIALIAS)
+    rectangle.save(join(settings.IMAGES, "pos{}.png".format(text)))
 
 def draw_change(position):
     size = 180
@@ -172,7 +187,7 @@ def generate_images(test_mode=True):
         ox =ImageDraw.Draw(peak)
         font_name = join(settings.IMAGE_ASSETS, 'Bauhaus_.ttf')
 
-        draw_position(position.position)
+        draw_position(position)
         draw_change(position)
         draw_lower_third(position)
 
