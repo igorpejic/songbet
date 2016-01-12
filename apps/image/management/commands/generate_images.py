@@ -270,7 +270,7 @@ def generate_images(test_mode=True):
         #plt.gca().invert_xaxis()
         line_ani = animation.FuncAnimation(fig, update_line, frames=len(positions), fargs=(data, l),
                                            interval=2000)
-        line_ani.save('lines.mp4', fps=len(positions))
+        # line_ani.save('lines.mp4', fps=len(positions))
 
         ####
         positions = positions[::-1]

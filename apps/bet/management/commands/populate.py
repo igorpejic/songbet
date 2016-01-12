@@ -25,38 +25,47 @@ class WeeklyChart(object):
         sock.close()
         soup = BeautifulSoup(htmlSource)
         song_name = []
-        artist_names = []
-        chart = []
-        artists = []
-        for node in soup.select(".row-title > h2"):
-            song_name.append(''.join(node.findAll(text=True)).strip())
-        for node in soup.select(".row-title > h3"):
-            artist = ''.join(node.findAll(text=True)).strip()
-            artist_names.append(artist)
-            '''
-            if re.findall('(.*)Featuring', artist):
-                artist = re.findall('(.*)Featuring', artist)[0]
-            if re.findall('(.*)With', artist):
-                artist = re.findall('(.*)With', artist)[0]
-            artist = artist.split('&')[0]
-            artist = artist.rstrip()
-            '''
-            artists.append(artist)
-
-        chart = zip(song_name, artists, artist_names)
 
         week_time = time.strptime(soup.time.text, "%B %d, %Y")
         dt = datetime.fromtimestamp((time.mktime(week_time)))
-        if check_won:
-            last_week = Week.objects.all().order_by('-date')[1]
         this_week = Week.objects.get_or_create(date=dt)[0]
 
-        for position, (song_name, artist, artist_name) in enumerate(chart):
-            artist = Artist.objects.get_or_create(name=artist)[0]
+        for i in range(1, 101):
+            article = soup.find(id="row-{}".format(i))
+            article_secondary = article.find(id="row-{}-secondary".format(i))
+            artist_name = article.select(".row-title > h3")[0].getText().strip()
+            song_name = article.select(".row-title > h2")[0].getText().strip()
+
+            artist = Artist.objects.get_or_create(name=artist_name)[0]
             song = Song.objects.get_or_create(name=song_name, artist=artist,
                                               artist_name=artist_name)[0]
-            Position.objects.get_or_create(week=this_week, song=song,
-                                           position=position + 1)
+            position = Position.objects.get_or_create(week=this_week, song=song,
+                                                      position=i)[0]
+
+            awards = article_secondary.find(class_="row-awards")
+            if awards:
+                for award in awards.findAll('li'):
+                    performance_gain = award.find(class_="fa-dot-circle-o")
+                    if performance_gain:
+                        position.performance_gain = True
+                        position.save()
+
+                    airplay_gain = award.find(class_="fa-microphone")
+                    if airplay_gain:
+                        this_week.airplay_gain = i
+                    stream_gain = award.find(class_="fa-signal")
+                    if stream_gain:
+                        this_week.stream_gain = i
+                    digital_gain = award.find(class_="fa-usd")
+                    if digital_gain:
+                        this_week.digital_gain = i
+                    highest_ranking_debut = award.find(class_="fa-angle-double-up")
+                    if highest_ranking_debut:
+                        this_week.highest_ranking_debut = i
+
+        this_week.save()
+        if check_won:
+            last_week = Week.objects.all().order_by('-date')[1]
 
         if check_won and this_week != last_week and checked is False:
             check_if_won.check_if_won(last_week, this_week)

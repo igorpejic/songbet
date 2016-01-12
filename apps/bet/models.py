@@ -45,6 +45,11 @@ class Week(models.Model):
     date = models.DateField()
     songs = models.ManyToManyField(Song, through="Position")
 
+    airplay_gain = models.IntegerField(default=-1)
+    stream_gain = models.IntegerField(default=-1)
+    digital_gain = models.IntegerField(default=-1)
+    highest_ranking_debut = models.IntegerField(default=-1)
+
     @classmethod
     def latest(cls):
         return cls.objects.filter()[0]
@@ -115,6 +120,7 @@ class Position(models.Model):
     odd_2 = models.FloatField(blank=True, null=True)
     change = models.CharField(max_length=4, choices=CHANGE_CHOICES, blank=True, null=True)
     n_change = models.IntegerField(blank=True, null=True)
+    performance_gain = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['position']
