@@ -36,8 +36,7 @@ def generate_video(test=True):
                  set_duration(duration))
 
         graph = graph.set_pos(lambda t: (
-            (max(1450, 1800 - t * 700),
-             (5, int(20 - 400*t + 400*13.2))[t > 13.2])))
+            (max(1445, 1800 - t * 700), (5, int(20 - 400*t + 400*13.2))[t > 13.2])))
 
         ####
         w, h = video.size
