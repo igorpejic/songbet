@@ -31,10 +31,10 @@ class WeeklyChart(object):
         this_week = Week.objects.get_or_create(date=dt)[0]
 
         for i in range(1, 101):
-            article = soup.find(id="row-{}".format(i))
-            article_secondary = article.find(id="row-{}-secondary".format(i))
-            artist_name = article.select(".row-title > h3")[0].getText().strip()
-            song_name = article.select(".row-title > h2")[0].getText().strip()
+            article = soup.find(class_="chart-row--{}".format(i))
+            article_secondary = article.find(id="chart-row-{}-secondary".format(i))
+            artist_name = article.select(".chart-row__title > h3")[0].getText().strip()
+            song_name = article.select(".chart-row__title > h2")[0].getText().strip()
 
             artist = Artist.objects.get_or_create(name=artist_name)[0]
             song = Song.objects.get_or_create(name=song_name, artist=artist,
@@ -42,7 +42,7 @@ class WeeklyChart(object):
             position = Position.objects.get_or_create(week=this_week, song=song,
                                                       position=i)[0]
 
-            awards = article_secondary.find(class_="row-awards")
+            awards = article_secondary.find(class_="chart-row__awards")
             if awards:
                 for award in awards.findAll('li'):
                     performance_gain = award.find(class_="fa-dot-circle-o")
