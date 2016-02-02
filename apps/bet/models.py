@@ -19,7 +19,7 @@ class Artist(models.Model):
 
 class Song(models.Model):
     name = models.CharField(max_length=200)
-    youtube_link = models.URLField(null=True, blank=True)
+    youtube_link = models.CharField(null=True, blank=True, max_length=300)
     artist = models.ForeignKey(Artist)
     # billboard like name
     artist_name = models.CharField(max_length=250)

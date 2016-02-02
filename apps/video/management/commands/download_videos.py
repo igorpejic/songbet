@@ -19,25 +19,28 @@ def download_videos(test=True):
     songs = [p.song for p in positions][4:]
     for song in songs:
         if song.youtube_link:
-            print 'Downloading video: {}'.format(song)
             link = 'http://www.youtube.com/watch?v=' + song.youtube_link
             try:
                 yt = YouTube(link)
+                yt.set_filename("{} - {}".format(song.name, song.artist.name))
             except AgeRestricted:
                 manually_download.append(link)
+                print 'Song is age restricted, adding to manually_download list.'
                 continue
             try:
-                video = yt.get('mp4', '720p')
-                print video.filename
+                video_type = yt.filter('mp4')[-1]
+                video = yt.get(video_type.extension, video_type.resolution)
             except Exception:
                 traceback.print_exc()
-                print '\n No 720p, downloading 360p'
-                video = yt.get('mp4', '360p')
+                continue
 
             if not os.path.exists(os.path.abspath(os.path.join(settings.RAW_VIDEOS, video.filename + ".mp4"))):
+                print 'Downloading video: {}'.format(song)
                 video.download(settings.RAW_VIDEOS)
+            else:
+                print 'Video: {} already downlaoded. Skipping.'.format(song)
 
-    print manually_download
+    print 'Manually download these songs: %s' % manually_download
 
 
 class Command(BaseCommand):
