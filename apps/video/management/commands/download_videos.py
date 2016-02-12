@@ -15,8 +15,8 @@ from apps.bet.models import Week, Position
 
 def download_videos(test=True):
     manually_download = []
-    positions = Week.objects.all()[0].position_set.all()
-    songs = [p.song for p in positions][4:]
+    positions = Week.objects.all()[0].position_set.all().order_by('position')
+    songs = [p.song for p in positions][50:]
     for song in songs:
         if song.youtube_link:
             link = 'http://www.youtube.com/watch?v=' + song.youtube_link
@@ -35,7 +35,7 @@ def download_videos(test=True):
                 continue
 
             if not os.path.exists(os.path.abspath(os.path.join(settings.RAW_VIDEOS, video.filename + ".mp4"))):
-                print 'Downloading video: {}'.format(song)
+                print 'Downloading video: {} - {}'.format(song, video_type.resolution)
                 video.download(settings.RAW_VIDEOS)
             else:
                 print 'Video: {} already downlaoded. Skipping.'.format(song)

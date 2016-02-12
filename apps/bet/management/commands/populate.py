@@ -78,7 +78,7 @@ def populate(check_won=False):
     url += '/'
     today = date.today()
     week_sunday = today + timedelta(days=-today.weekday() - 2,
-                                    weeks=1)
+                                    weeks=2)
     time_delta = timedelta(days=-7)
     checked = False
     for i in xrange(10):
