@@ -5,6 +5,7 @@ from apps.bet.models import *
 from django.conf import settings
 
 from apps.bet.models import Week, Position
+from .subscribers_video import subscribers_video
 
 from django.core.management.base import BaseCommand
 from moviepy.audio.fx.all import audio_fadeout
@@ -44,6 +45,8 @@ def chart_highlights(week, position):
 def generate_video(test=True):
 
     video_list = []
+    sub_video = subscribers_video()
+    video_list.append(sub_video)
     week = Week.objects.all()[0]
     for i, position in enumerate(week.position_set.all()):
         if i == 2 and test:
