@@ -13,12 +13,39 @@ from moviepy.editor import (
     TextClip
 )
 
+duration = 10
+change_image_size = position_image_size = {'x': 180, 'y': 180}
+lower_third_size = {'x': 1500, 'y': 180}
+
+
+def chart_highlights(week, position):
+    gains = ['airplay_gain', 'stream_gain', 'digital_gain', 'highest_ranking_debut']
+
+    top_offset = 0
+    n_movies = 0
+    gainer_movies = []
+    for gain in gains:
+        if getattr(week, gain) == position:
+            top_offset = n_movies * 50
+            n_movies += 1
+            gainer_image = ImageClip(
+                join(settings.IMAGE_ASSETS, "{}.png".format(gain))
+            ).set_duration(duration)
+
+            gainer_movies.append(gainer_image.set_pos(
+                lambda t,
+                top_offset=top_offset:
+                (min(10, -position_image_size['x'] + t * 400),
+                 (1080 - 20 - position_image_size['y'] - 55 - top_offset,
+                  int(1060 - position_image_size['y'] + 380*t - 380*13))[t > 13])))
+    return gainer_movies
+
 
 def generate_video(test=True):
 
     video_list = []
-    duration = 15
-    for i, position in enumerate(Week.objects.all()[0].position_set.all()):
+    week = Week.objects.all()[0]
+    for i, position in enumerate(week.position_set.all()):
         if i == 2 and test:
             break
         if i == 50:
@@ -26,12 +53,9 @@ def generate_video(test=True):
 
         video = VideoFileClip(join(settings.VIDEO_ASSETS,
                                    "{} - {}.mp4".format(position.song.name,
-                                                        position.song.artist)))
+                                                        position.song.artist))).set_duration(10)
         # video = audio_fadeout(video, 2)
 
-        image = ImageClip(
-            join(settings.IMAGES, "lower{}.png".format(position.position))
-        ).set_duration(duration)
         graph = (ImageClip(join(settings.IMAGES, "graph{}.png".format(position.position))).
                  set_duration(duration))
 
@@ -41,8 +65,6 @@ def generate_video(test=True):
         ####
         w, h = video.size
 
-        change_image_size = position_image_size = {'x': 180, 'y': 180}
-        lower_third_size = {'x': 1500 , 'y': 180}
         position_image = ImageClip(
             join(settings.IMAGES, "pos{}.png".format(position.position))
         ).set_duration(duration)
@@ -72,9 +94,9 @@ def generate_video(test=True):
                        (1080 - 20 - lower_third_size['y'],
                         int(1060 - lower_third_size['y'] + 430*t - 430*13.4))[t > 13.4]))
 
-        #final = CompositeVideoClip([video, image, graph, txt_mov], size=((1920, 1080))).fadeout(0.2)
-        final = CompositeVideoClip([video, lower_third_mov, change_image_mov, txt_mov, graph], size=((1920, 1080))).fadeout(0.2)
-        #final.preview(fps=20)
+        gainer_mov = chart_highlights(week, position.position)
+        final = CompositeVideoClip([video, lower_third_mov, change_image_mov,
+                                    txt_mov, graph] + gainer_mov, size=((1920, 1080))).fadeout(0.2)
         video_list.append(final)
 
     FINAL = concatenate_videoclips(list(reversed(video_list)))
