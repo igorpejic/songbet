@@ -300,7 +300,14 @@ def generate_images(test_mode=True):
 
         fig, ax = plt.subplots(linewidth=20)
         #plt.xticks(x,xs)
+        """
+        Transparency
         plt.yticks(y, ys)
+        fig.patch.set_facecolor('black')
+        fig.patch.set_alpha(0.05)
+        ax.patch.set_facecolor('black')
+        ax.patch.set_alpha(0)
+        """
 
         ax.set_xlim([-0.3,  10.21])
         ax.set_ylim([-0.8, 100])
@@ -311,6 +318,7 @@ def generate_images(test_mode=True):
         ax.tick_params(axis='x', colors=color)
         ax.set_xticklabels([])
         ax.set_yticklabels([])
+        ax.set_axis_bgcolor((0, 0, 0))
         ax.xaxis.set_ticks_position('bottom')
         ax.yaxis.set_ticks_position('left')
         ax.tick_params(axis='y', colors=color)
@@ -332,11 +340,14 @@ def generate_images(test_mode=True):
                 else:
                     ax.annotate('{}'.format(y), xy=(x, y), xytext=(x+0.3, y-3), color=color, fontsize=24)
 
-
         x = np.arange(len(positions))
         plt.gca().invert_yaxis()
         plt.gca().invert_xaxis()
         ax.plot(x, positions, color='w', markersize=10)
+
+        # Transparency
+        # plt.savefig(join(settings.IMAGES, 'graph{}.png'.format(position.position)),
+        # edgecolor='none', facecolor=fig.get_facecolor(), dpi=65)
         plt.savefig(join(settings.IMAGES, 'graph{}.png'.format(position.position)),
                     transparent=True, dpi=65)
 
