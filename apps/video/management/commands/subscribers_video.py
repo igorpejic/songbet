@@ -45,5 +45,6 @@ def subscribers_video():
 
     audioclip = VideoFileClip(join(settings.VIDEO_ASSETS, "gunfire.mp4"))
 
-    final = CompositeVideoClip([audioclip, background, title] + subscriber_videos, size=((1920, 1080))).fadeout(0.2)
+    final = CompositeVideoClip([audioclip, background, title] + subscriber_videos,
+                               size=((1920, 1080))).fadeout(0.2)
     return final
